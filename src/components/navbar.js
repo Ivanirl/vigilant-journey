@@ -116,30 +116,6 @@ function NavBar() {
                 <span>Home</span>
               </Link>
             </li>
-            <li>
-              <Link
-                to="/About"
-                className={
-                  activeLink === "About" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("About")}
-              >
-                <span>About</span>
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/Gallery"
-                className={
-                  activeLink === "Gallery"
-                    ? "active navbar-link"
-                    : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("Gallery")}
-              >
-                <span>Gallery</span>
-              </Link>
-            </li>
           </ul>
         </div>
 

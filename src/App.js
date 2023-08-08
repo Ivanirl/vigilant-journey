@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 
 import Home from "./pages/HomePage";
-import AboutPage from "./pages/About";
 import DefaultLayout from "./components/Layout";
 
 function App() {

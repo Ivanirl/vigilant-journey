@@ -18,11 +18,6 @@ function Home() {
           </div>
         </section>
         <section className="miniGal">
-          <div className="lefty">
-            <h1 className="Heroo">THE ALBUM EXPERIENCE</h1>
-            <span>Bound to blow your mind</span>
-            <button className="elsa">Get Started</button>
-          </div>
 
         </section>
       </div>

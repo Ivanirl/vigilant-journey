@@ -23,15 +23,7 @@ function Home() {
             <span>Bound to blow your mind</span>
             <button className="elsa">Get Started</button>
           </div>
-          <div className="right">
-            <div className="stack">
-              <div className="other">
-                <img className="pic1" src={joko} alt="picpic" />
-                <img className="pic2" src={joko} alt="picpic" />
-              </div>
-              <img className="picky" src={joko} alt="picpic" />
-            </div>
-          </div>
+
         </section>
       </div>
     </div>

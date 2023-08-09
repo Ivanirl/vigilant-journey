@@ -17,9 +17,6 @@ function Home() {
             <img className="bigFace" src={bigface} alt="ivanhead" />
           </div>
         </section>
-        <section className="miniGal">
-
-        </section>
       </div>
     </div>
   );

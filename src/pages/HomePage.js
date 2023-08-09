@@ -1,5 +1,3 @@
-import bigface from "../Resources/AXKF9216.JPG";
-import joko from "../Resources/Joko.JPG";
 
 function Home() {
   return (

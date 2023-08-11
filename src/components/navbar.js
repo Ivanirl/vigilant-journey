@@ -51,7 +51,7 @@ function NavBar() {
       return () => item.removeEventListener("click", togglemenu);
     })
   }, []);
-
+///
 
   return (
     <div className="NavBar" id={scrolled ? "scrollo" : ""}>

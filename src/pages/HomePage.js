@@ -1,6 +1,7 @@
 function Home() {
   return (
-    <div className="bigBody"> </div>
+    <div className="bigBody">
+    </div>
   );
 }
 

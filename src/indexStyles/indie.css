@@ -107,10 +107,12 @@ a {
 
 #mens {
   display: none;
+  cursor: pointer;
 }
 
 #womens {
   display: none;
+  cursor: pointer;
 }
 
 button {

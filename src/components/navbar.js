@@ -116,6 +116,17 @@ function NavBar() {
                 <span>Home</span>
               </Link>
             </li>
+            <li>
+            <Link
+                to="/portfolio"
+                className={
+                  activeLink === "portfolio" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("portfolio")}
+              >
+                <span>Portfolio</span>
+              </Link>
+            </li>
           </ul>
         </div>
 

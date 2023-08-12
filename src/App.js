@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 
 import Home from "./pages/HomePage";
+import Portfolio from "./pages/Portfolio";
 import DefaultLayout from "./components/Layout";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
 
     <Routes>
       <Route path="/" element={<Home/>}></Route>
+      <Route path="portfolio" element={<Portfolio />}></Route>
     </Routes>
   </DefaultLayout>;
 }

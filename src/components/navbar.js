@@ -35,25 +35,6 @@ function NavBar() {
   const bubbleNav = document.querySelector("#nav-bubble");
 
 
-
-  useEffect(() => {
-    const togglemenu = () => {
-      if (bubbleNav.className === "closedNav") {
-        setMenuha(true);
-        console.log("setmenuistrue");
-      } else if (bubbleNav.className === "navigation") {
-        setMenuha(false);
-        console.log("setmenuisfalse");
-      }
-    };
-
-    Menu.forEach((item) => {
-      item.addEventListener("click", togglemenu);
-      return () => item.removeEventListener("click", togglemenu);
-    })
-  }, []);
-
-
   return (
     <div className="NavBar" id={scrolled ? "scrollo" : ""}>
       <div className="container">
@@ -63,10 +44,10 @@ function NavBar() {
               <img src={Logo} className="logoimage" alt="logo image" />
             </Link>
           </div>
+          <button className="mens" onClick={()=>{setMenuha(!menuha)}}>
           <svg
             width="49"
-            className="bubble"
-            id="mens"
+            //className="mens"
             height="16"
             viewBox="0 0 49 16"
             fill="none"
@@ -75,12 +56,13 @@ function NavBar() {
             <rect width="49" height="3" rx="1.5" fill="#D9D9D9" />
             <rect y="13" width="49" height="3" rx="1.5" fill="#D9D9D9" />
           </svg>
+          </button>
 
           <ul className={menuha ? "navigation" : "closedNav"} id="nav-bubble">
             <li className="bubble-close">
-              <svg
-                className="bubble"
-                id="womens"
+            <button className="womens" onClick={()=>{setMenuha(!menuha)}}>
+            <svg
+                //className="womens"
                 width="49"
                 height="37"
                 viewBox="0 0 49 37"
@@ -105,6 +87,8 @@ function NavBar() {
                   fill="#D9D9D9"
                 />
               </svg>
+            </button>
+              
             </li>
             <li>
               <Link
@@ -112,7 +96,8 @@ function NavBar() {
                 className={
                   activeLink === "home" ? "active navbar-link" : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("home")}
+                onClick={() => {onUpdateActiveLink("home")
+              setMenuha(!menuha)}}
               >
                 <span>Home</span>
               </Link>
@@ -123,7 +108,8 @@ function NavBar() {
                 className={
                   activeLink === "portfolio" ? "active navbar-link" : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("portfolio")}
+                onClick={() => {onUpdateActiveLink("portfolio")
+                setMenuha(!menuha)}}
               >
                 <span>Portfolio</span>
               </Link>

@@ -167,7 +167,7 @@ button:active {
     width: 100%;
     z-index: 10000;
   }
-  .NavBar #mens {
+  .NavBar .mens {
     display: inline-block;
   }
   .NavBar .container {
@@ -215,7 +215,7 @@ button:active {
     height: 100%;
     width: 100%;
   }
-  .NavBar .container .navigation #womens {
+  .NavBar .container .navigation .womens {
     display: inline-block;
     position: absolute;
     top: 2em;
@@ -233,7 +233,7 @@ button:active {
     width: 100%;
     z-index: 10000;
   }
-  .NavBar #mens {
+  .NavBar .mens {
     display: inline-block;
   }
   .NavBar .container {
@@ -279,7 +279,7 @@ button:active {
     width: 100%;
     padding-top: 0;
   }
-  .NavBar .container .navigation #womens {
+  .NavBar .container .navigation .womens {
     display: inline-block;
     position: absolute;
     top: 28px;

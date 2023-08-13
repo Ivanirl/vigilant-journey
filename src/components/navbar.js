@@ -30,9 +30,9 @@ function NavBar() {
     onUpdateActiveLink("Signup");
   };
 
-  // const MenuOpen = document.querySelector(".bubble-open");
-  const Menu = document.querySelectorAll(".bubble");
-  const bubbleNav = document.querySelector("#nav-bubble");
+  // // const MenuOpen = document.querySelector(".bubble-open");
+  // const Menu = document.querySelectorAll(".bubble");
+  // const bubbleNav = document.querySelector("#nav-bubble");
 
   return (
     <div className="NavBar" id={scrolled ? "scrollo" : ""}>

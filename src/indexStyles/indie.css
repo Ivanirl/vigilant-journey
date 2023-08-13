@@ -223,7 +223,7 @@ button {
     display: inline-block;
     position: absolute;
     top: 2em;
-    right: 2em;
+    right: 4em;
   }
   .NavBar .container .getstarted {
     display: none;
@@ -286,7 +286,7 @@ button {
   .NavBar .container .navigation .womens {
     display: inline-block;
     position: absolute;
-    top: 28px;
+    top: 18px;
     right: 20px;
   }
   .NavBar .container .getstarted {

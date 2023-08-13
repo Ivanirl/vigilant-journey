@@ -27,6 +27,7 @@ function NavBar() {
   const navy = useNavigate();
   const sign = () => {
     navy("/Signup");
+    onUpdateActiveLink("Signup")
   };
 
   // const MenuOpen = document.querySelector(".bubble-open");
@@ -133,7 +134,7 @@ function NavBar() {
         <div className="getstarted">
           <div className="seperator"></div>
           <button className="getStarted" onClick={sign}>
-            GET STARTED
+            CONNECT
           </button>
         </div>
       </div>

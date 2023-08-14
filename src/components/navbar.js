@@ -138,7 +138,6 @@ function NavBar() {
             </li>
           </ul>
         </div>
-
         <div className="getstarted">
           <div className="seperator"></div>
           <button className="getStarted" onClick={sign}>
@@ -149,5 +148,5 @@ function NavBar() {
     </div>
   );
 }
-
+//////
 export default NavBar;

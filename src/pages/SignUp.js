@@ -2,9 +2,7 @@ function Signup() {
   return (
     <div className="SignUp">
       <div className="body">
-        <section className="left">
-          <img alt="big ass image"/>
-        </section>
+        <section className="left"></section>
         <section className="right">
           <div className="rootbeer">
             <div className="floating">
@@ -27,11 +25,13 @@ function Signup() {
               </div>
               <div className="input-field">
                 <form>
-                <input type="text"></input>
-                <input type="password"></input>
-                <span>Forgot Password</span>
-                <button>Submit</button>
-                <span>Don't have an account? <span>SIgn up</span></span>
+                  <input type="text"></input>
+                  <input type="password"></input>
+                  <span>Forgot Password</span>
+                  <button>Submit</button>
+                  <span>
+                    Don't have an account? <span>SIgn up</span>
+                  </span>
                 </form>
               </div>
             </div>

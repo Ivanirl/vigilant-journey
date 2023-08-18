@@ -203,7 +203,10 @@ button {
       }
     }
     .right{
-
+      padding: 2em;
+      .rootbeer{
+        position: absolute;
+      }
     }
   }
 }

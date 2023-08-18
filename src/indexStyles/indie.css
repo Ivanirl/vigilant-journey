@@ -177,6 +177,13 @@ button {
 .SignUp .body .left img {
   width: 100%;
 }
+.SignUp .body .right {
+  padding: 2em;
+}
+.SignUp .body .right .rootbeer {
+  position: absolute;
+}
+
 @media only screen and (max-width: 1236px) {
   .NavBar {
     padding: 1em 3.1em;

@@ -167,6 +167,9 @@ button {
   padding: 2em;
   padding-top: 5em;
 }
+.SignUp .body {
+  padding: 1em;
+}
 
 @media only screen and (max-width: 1236px) {
   .NavBar {

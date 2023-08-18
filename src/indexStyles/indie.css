@@ -183,6 +183,10 @@ button {
 .SignUp .body .right .rootbeer {
   position: absolute;
 }
+.SignUp .body .right .input-container {
+  padding: 2em;
+  border-radius: 20px;
+}
 
 @media only screen and (max-width: 1236px) {
   .NavBar {

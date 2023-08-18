@@ -10,6 +10,7 @@ function Signup() {
             <div className="floating">
               <img />
             </div>
+            //party
             <div className="input-container">
               <div className="descript">
                 <div className="header">

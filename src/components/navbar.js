@@ -121,7 +121,7 @@ function NavBar() {
                     : "navbar-link"
                 }
                 onClick={() => {
-                  if (window.width < 531) {
+                  if (window.screenX < 531) {
                     onUpdateActiveLink("portfolio");
                   }else{
                     onUpdateActiveLink("portfolio");

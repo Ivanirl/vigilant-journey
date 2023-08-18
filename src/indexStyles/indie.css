@@ -163,6 +163,11 @@ button {
   border-bottom: solid 3px #fff;
 }
 
+.SignUp {
+  padding: 2em;
+  padding-top: 5em;
+}
+
 @media only screen and (max-width: 1236px) {
   .NavBar {
     padding: 1em 3.1em;

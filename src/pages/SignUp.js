@@ -3,7 +3,7 @@ function Signup() {
     <div className="SignUp">
       <div className="body">
         <section className="left">
-          <img />
+          <img alt="big ass image"/>
         </section>
         <section className="right">
           <div className="rootbeer">

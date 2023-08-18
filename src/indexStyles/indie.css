@@ -184,6 +184,8 @@ button {
   position: absolute;
 }
 .SignUp .body .right .input-container {
+  display: flex;
+  flex-direction: column;
   padding: 2em;
   border-radius: 20px;
 }

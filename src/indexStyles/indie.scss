@@ -198,7 +198,7 @@ button {
     display: flex;
     .left{
       width: 70%;
-      img{
+      img{  
         width: 100%;
       }
     }
@@ -208,6 +208,8 @@ button {
         position: absolute;
       }
       .input-container{
+        display: flex;
+        flex-direction: column;
         padding: 2em;
         border-radius: 20px;
       }

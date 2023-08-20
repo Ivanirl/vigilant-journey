@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Logo from "../Resources/Logo=hover.png";
+import Logo from "../Resources/Logogogogo.png";
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState("home");

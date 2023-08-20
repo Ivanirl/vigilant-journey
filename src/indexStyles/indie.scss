@@ -68,7 +68,6 @@ body {
 
 a {
   text-decoration: none;
-  cursor: pointer;
 }
 
 .NavBar {
@@ -145,12 +144,10 @@ a {
 
 .mens {
   display: none;
-  cursor: pointer;
 }
 
 .womens {
   display: none;
-  cursor: pointer;
 }
 
 button {
@@ -177,7 +174,6 @@ button {
 .navbar-link {
   opacity: 0.7;
   transition: 0.1s ease-in-out;
-  cursor: pointer;
 
   &:hover {
     opacity: 1;
@@ -189,7 +185,6 @@ button {
   opacity: 1;
   padding: 1.4px 2px;
   border-bottom: solid 3px rgb(37, 37, 37);
-  cursor: pointer;
 }
 
 .SignUp {

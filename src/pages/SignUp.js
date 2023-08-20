@@ -1,4 +1,18 @@
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+
 function Signup() {
+  const [activeLink, setActiveLink] = useState("home");
+
+  const onUpdateActiveLink = (value) => {
+    setActiveLink(value);
+  };
+
+  const navy = useNavigate();
+  const sign = () => {
+    navy("/");
+    onUpdateActiveLink("");
+  };
   return (
     <div className="SignUp">
       <div className="body">
@@ -28,7 +42,7 @@ function Signup() {
                   <input type="text"></input>
                   <input type="password"></input>
                   <span>Forgot Password</span>
-                  <button>Submit</button>
+                  <button onClick={sign}>Submit</button>
                   <span>
                     Don't have an account? <span>SIgn up</span>
                   </span>

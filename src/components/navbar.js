@@ -67,7 +67,6 @@ function NavBar() {
                 }}
               >
                 <svg
-                  //className="womens"
                   width="49"
                   height="37"
                   viewBox="0 0 49 37"
@@ -98,7 +97,7 @@ function NavBar() {
               <Link
                 to="/"
                 className={
-                  activeLink === "home" ? "active navbar-link" : "navbar-link"
+                  activeLink === "home" ? "active navbar-link" : "inactive navbar-link"
                 }
                 onClick={() => {
                   if(window.screenX < 531){
@@ -118,7 +117,7 @@ function NavBar() {
                 className={
                   activeLink === "portfolio"
                     ? "active navbar-link"
-                    : "navbar-link"
+                    : "inactive navbar-link"
                 }
                 onClick={() => {
                   if (window.screenX < 531) {

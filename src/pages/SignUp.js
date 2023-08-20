@@ -16,6 +16,13 @@ function Signup() {
   return (
     <div className="SignUp">
       <div className="body">
+        <div className="Quote">
+          <h1>
+            {" "}
+            <span>"</span>
+            Shoes for Everyone!
+          </h1>
+        </div>
         <section className="left"></section>
         <section className="right">
           <div className="rootbeer">
@@ -39,12 +46,12 @@ function Signup() {
               </div>
               <div className="input-field">
                 <form>
-                  <input type="text"></input>
-                  <input type="password"></input>
-                  <span>Forgot Password</span>
+                  <input type="text" placeholder="Email"></input>
+                  <input type="password" placeholder="Password"></input>
+                  <span className="for">Forgot Password</span>
                   <button onClick={sign}>Submit</button>
-                  <span>
-                    Don't have an account? <span>SIgn up</span>
+                  <span className="don">
+                    Don't have an account? <span>Sign up</span>
                   </span>
                 </form>
               </div>

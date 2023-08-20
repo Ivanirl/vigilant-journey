@@ -194,6 +194,11 @@ button {
   width: 4em;
   line-height: 0.8em;
   text-shadow: 4px 4px 5px #000;
+  transition: all ease 0.4s;
+}
+.SignUp .body .Quote h1:hover {
+  font-size: 5.1em;
+  letter-spacing: 5px;
 }
 .SignUp .body .left {
   position: absolute;

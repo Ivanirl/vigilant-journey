@@ -229,13 +229,13 @@ button {
       z-index: 1000000;
 
       span {
-        color:white;
+        color: white;
         font-size: 2em;
         margin: 0;
         line-height: 2em;
       }
 
-      h1{
+      h1 {
         display: flex;
         align-items: baseline;
         color: white;
@@ -244,6 +244,11 @@ button {
         width: 4em;
         line-height: 0.8em;
         text-shadow: 4px 4px 5px #000;
+        transition: all ease 0.4s;
+        &:hover {
+          font-size: 5.1em;
+          letter-spacing: 5px;
+        }
       }
     }
     .left {

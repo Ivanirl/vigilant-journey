@@ -1,6 +1,9 @@
+import NavBar from "../components/navbar";
+
 function Home() {
   return (
-    <div className="bigBody">
+    <div>
+      <NavBar />
     </div>
   );
 }

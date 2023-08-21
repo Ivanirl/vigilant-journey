@@ -353,6 +353,11 @@ button {
   display: inline-block;
 }
 
+.Barrister {
+  display: flex;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 1236px) {
   .NavBar {
     padding: 1em 3.1em;

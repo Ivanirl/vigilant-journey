@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Logo from "../Resources/Logogogogo.png";
+import Subbar from "./Subbar";
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
@@ -140,6 +141,7 @@ function NavBar() {
           </button>
         </div>
       </div>
+      <Subbar />
     </div>
   );
 }

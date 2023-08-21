@@ -356,10 +356,12 @@ button {
 .Barrister {
   display: flex;
   justify-content: center;
+  border: solid 2px #8d8d8d;
 }
-.Barrister .minibubble {
-  display: none;
+.Barrister ul {
+  display: flex;
   list-style: none;
+  gap: 10px;
 }
 
 @media only screen and (max-width: 1236px) {

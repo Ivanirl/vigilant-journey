@@ -375,10 +375,12 @@ button {
 .Barrister{
   display: flex;
   justify-content: center;
+  border: solid 2px #8d8d8d;
 
-  .minibubble{
-    display: none;
+  ul{
+    display: flex;
     list-style: none;
+    gap: 10px;
   }
 }
 ////customized navbars for the responsive navbar////

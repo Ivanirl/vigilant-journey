@@ -358,7 +358,7 @@ button {
   justify-content: center;
 }
 .Barrister .minibubble {
-  display: flex;
+  display: none;
   list-style: none;
 }
 

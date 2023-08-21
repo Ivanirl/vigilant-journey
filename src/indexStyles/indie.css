@@ -357,6 +357,10 @@ button {
   display: flex;
   justify-content: center;
 }
+.Barrister .minibubble {
+  display: flex;
+  list-style: none;
+}
 
 @media only screen and (max-width: 1236px) {
   .NavBar {

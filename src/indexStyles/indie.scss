@@ -375,6 +375,11 @@ button {
 .Barrister{
   display: flex;
   justify-content: center;
+
+  .minibubble{
+    display: flex;
+    list-style: none;
+  }
 }
 ////customized navbars for the responsive navbar////
 

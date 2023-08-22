@@ -1,12 +1,10 @@
 import { motion } from "framer-motion";
-import NavBar from "../components/navbar";
-import Subbar from "../components/Subbar";
+import TwoBars from "../components/NavandSubbar";
 
 function Home() {
   return (
     <div>
-      <NavBar />
-      <Subbar />
+      <TwoBars />
     </div>
   );
 }

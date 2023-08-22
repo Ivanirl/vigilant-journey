@@ -141,7 +141,7 @@ function NavBar() {
           </button>
         </div>
       </div>
-      <Subbar />
+      {/* <Subbar /> */}
     </div>
   );
 }

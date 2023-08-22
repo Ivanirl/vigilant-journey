@@ -361,9 +361,14 @@ button {
   border: solid 2px #8d8d8d;
 }
 .Barrister ul {
+  padding: 0 1em;
   display: flex;
   list-style: none;
   gap: 80px;
+}
+.Barrister ul li {
+  padding: 0;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1236px) {

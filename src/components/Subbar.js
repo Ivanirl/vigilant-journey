@@ -2,7 +2,7 @@ function Subbar(){
     return(
         <div className="Barrister">
             <div className="shoebox">
-                <img />
+                <img alt="shoe icon" />
             </div>
             <ul classname="bubble">
                 <li className="navbar-link">All Products</li>
@@ -12,8 +12,12 @@ function Subbar(){
                 <li className="navbar-link">Kids</li>
                 <li className="navbar-link">More</li>
             </ul>
-            <div className="searchbox"></div>
-            <div className="favbox"></div>
+            <div className="searchbox">
+                <img alt="search" />
+            </div>
+            <div className="favbox">
+                <img alt="favourite" />
+            </div>
         </div>
     )
 }

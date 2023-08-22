@@ -109,7 +109,7 @@ function NavBar() {
                   }
                 }}
               >
-                <span>Home</span>
+                <span>Browse</span>
               </Link>
             </li>
             <li>

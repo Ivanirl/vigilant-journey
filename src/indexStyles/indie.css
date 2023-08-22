@@ -38,6 +38,7 @@ body {
   font-weight: 300;
   scroll-behavior: smooth;
   transition: ease 0.2s;
+  font-size: 0.8em;
 }
 
 a {
@@ -54,12 +55,13 @@ a {
 .NavBar .container {
   display: flex;
   justify-content: space-between;
-  padding: 0 0.2em;
+  padding: 0 0.1em;
+  padding-right: 1.3em;
 }
 .NavBar .container .rightboy {
   display: flex;
   justify-content: space-between;
-  gap: 13em;
+  gap: 11em;
 }
 .NavBar .container .rightboy .logo {
   padding: 0;
@@ -154,12 +156,12 @@ button {
 .active {
   opacity: 1;
   padding: 1.4px 2px;
-  border-bottom: solid 3px rgb(37, 37, 37);
 }
 
 .SignUp {
   padding: 2em;
   padding-top: 5em;
+  font-size: 1.2em;
 }
 .SignUp .body {
   padding: 1em;
@@ -351,21 +353,59 @@ button {
   position: fixed;
   top: 5em;
   display: flex;
+  align-items: center;
   justify-content: center;
   border: solid 2px #8d8d8d;
 }
-.Barrister ul {
-  padding: 0 1.5em;
-  display: flex;
-  list-style: none;
+.Barrister div {
+  padding: 1em;
+  min-height: 100%;
   border-left: solid 2px #8d8d8d;
   border-right: solid 2px #8d8d8d;
+}
+.Barrister .favbox {
+  border-left: none;
+}
+.Barrister ul {
+  padding: 0 2.5em;
+  display: flex;
+  list-style: none;
+  margin: 0 3.5em;
   gap: 80px;
 }
 .Barrister ul li {
   font-weight: 100;
   padding: 0;
   cursor: pointer;
+}
+
+.bodice {
+  padding-top: 9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spin-doctor {
+  margin-top: 5em;
+  border-radius: 20px;
+  background: #dddddd;
+  box-shadow: 2px 2px 8px #383838;
+  padding: 4em 2em;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+.spin-doctor .Spin img {
+  width: 20em;
+}
+.spin-doctor .textholder {
+  margin-top: 1em;
+}
+.spin-doctor .textholder span {
+  font-weight: 100;
+  font-size: 1.8em;
 }
 
 @media only screen and (max-width: 1236px) {

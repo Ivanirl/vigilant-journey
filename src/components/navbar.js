@@ -128,15 +128,18 @@ function NavBar() {
                   }
                 }}
               >
-                <span>Portfolio</span>
+                <span>Newsletter</span>
               </Link>
             </li>
           </ul>
         </div>
         <div className="getstarted">
-          <div className="seperator"></div>
+        <div className="seperator"></div>
           <button className="getStarted" onClick={sign}>
-            CONNECT
+            Sign in
+          </button>          <div className="seperator"></div>
+          <button className="getStarted" onClick={sign}>
+            About
           </button>
         </div>
       </div>

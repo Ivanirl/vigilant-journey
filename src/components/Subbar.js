@@ -1,7 +1,9 @@
 function Subbar(){
     return(
         <div className="Barrister">
-            <div className="shoebox"></div>
+            <div className="shoebox">
+                <img />
+            </div>
             <ul classname="bubble">
                 <li className="navbar-link">All Products</li>
                 <li className="navbar-link">Popular</li>

@@ -83,11 +83,6 @@ a {
   gap: 2em;
   transition: ease-in-out 2s;
 }
-.NavBar .container .getstarted .seperator {
-  background-color: rgb(156, 156, 156);
-  width: 2px;
-  height: 31px;
-}
 .NavBar .container .getstarted .getStarted {
   width: -moz-fit-content;
   width: fit-content;
@@ -145,7 +140,7 @@ button {
 }
 
 .navbar-link {
-  opacity: 0.7;
+  opacity: 0.6;
   transition: 0.1s ease-in-out;
 }
 .navbar-link:hover {
@@ -360,12 +355,15 @@ button {
   border: solid 2px #8d8d8d;
 }
 .Barrister ul {
-  padding: 0 1em;
+  padding: 0 1.5em;
   display: flex;
   list-style: none;
+  border-left: solid 2px #8d8d8d;
+  border-right: solid 2px #8d8d8d;
   gap: 80px;
 }
 .Barrister ul li {
+  font-weight: 100;
   padding: 0;
   cursor: pointer;
 }

@@ -5,9 +5,8 @@ import Subbar from "../components/Subbar";
 function Home() {
   return (
     <div>
-      <NavBar>
-        <Subbar />
-      </NavBar>
+      <NavBar />
+      <Subbar />
     </div>
   );
 }

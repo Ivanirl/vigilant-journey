@@ -9,9 +9,14 @@ export default function Nothing() {
       transition={{ duration: 0.7, ease: [0.6, -0.05, 0.01, 0.99] }}
       className="spin-doctor"
     >
-      <div className="Spin">
+      <motion.div
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.7, ease: [0.6, -0.05, 0.01, 0.99] }}
+        className="Spin"
+      >
         <img src={Roller} />
-      </div>
+      </motion.div>
       <div className="textholder">
         <span>Nothing to see here yet folks!</span>
       </div>

@@ -417,6 +417,8 @@ button {
   align-items: center;
 }
 
+
+
 .spin-doctor{
   margin-top: 5em;
   border-radius: 20px;
@@ -428,6 +430,17 @@ button {
   flex-direction: column;
   align-items: center;
   .Spin{
+
+    @keyframes spinno {
+      0% {rotate: 45deg;}
+      12% {rotate: 90deg;}
+      24% {rotate: 135deg;}
+      36% {rotate: 180deg;}
+      48% {rotate: 225deg;}
+      60% {rotate: 270deg;}
+      85% {rotate: 315deg;}
+      100% {rotate: 360deg;}
+    }
     img{
       width: 20em;
     }

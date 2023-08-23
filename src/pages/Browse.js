@@ -1,11 +1,11 @@
 import TwoBars from "../components/NavandSubbar"
-import Nothing from "../components/empty";
+import Box from "../components/box";
 
 export default function Browse() {
   return <div>
     <TwoBars />
     <div className="bodice">
-        <Nothing />
+        <Box />
       </div>
   </div>;
 }

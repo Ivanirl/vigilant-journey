@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import TwoBars from "../components/NavandSubbar";
+import NavBar from "../components/navbar";
 import Nothing from "../components/empty";
 
 function Home() {
   return (
     <div>
-      <TwoBars />
+      <NavBar />
       <div className="bodice">
         <Nothing />
       </div>

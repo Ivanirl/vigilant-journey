@@ -97,13 +97,35 @@ function NavBar() {
               <Link
                 to="/"
                 className={
-                  activeLink === "home" ? "active navbar-link" : "inactive navbar-link"
+                  activeLink === "home"
+                    ? "active navbar-link"
+                    : "inactive navbar-link"
                 }
                 onClick={() => {
-                  if(window.screenX < 531){
+                  if (window.screenX < 531) {
                     onUpdateActiveLink("home");
-                  }else{
+                  } else {
                     onUpdateActiveLink("home");
+                    setMenuha(!menuha);
+                  }
+                }}
+              >
+                <span>Home</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/browse"
+                className={
+                  activeLink === "browse"
+                    ? "active navbar-link"
+                    : "inactive navbar-link"
+                }
+                onClick={() => {
+                  if (window.screenX < 531) {
+                    onUpdateActiveLink("browse");
+                  } else {
+                    onUpdateActiveLink("browse");
                     setMenuha(!menuha);
                   }
                 }}
@@ -113,34 +135,35 @@ function NavBar() {
             </li>
             <li>
               <Link
-                to="/portfolio"
+                to="/PreOrder"
                 className={
-                  activeLink === "portfolio"
+                  activeLink === "PreOrder"
                     ? "active navbar-link"
                     : "inactive navbar-link"
                 }
                 onClick={() => {
                   if (window.screenX < 531) {
-                    onUpdateActiveLink("portfolio");
-                  }else{
-                    onUpdateActiveLink("portfolio");
+                    onUpdateActiveLink("PreOrder");
+                  } else {
+                    onUpdateActiveLink("PreOrder");
                     setMenuha(!menuha);
                   }
                 }}
               >
-                <span>Newsletter</span>
+                <span>Pre-Order</span>
               </Link>
             </li>
           </ul>
         </div>
         <div className="getstarted">
-        <div className="seperator"></div>
-          <button className="getStarted" onClick={sign}>
-            Sign in
-          </button>          <div className="seperator"></div>
+          <div className="seperator"></div>
           <button className="getStarted" onClick={sign}>
             About
           </button>
+          <div className="seperator"></div>
+          <button className="getStarted" onClick={sign}>
+            Sign in
+          </button>{" "}
         </div>
       </div>
     </div>

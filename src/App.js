@@ -8,9 +8,10 @@ import {
 import { AnimatePresence } from "framer-motion";
 
 import Home from "./pages/HomePage";
-import Portfolio from "./pages/Portfolio";
+import PreOrder from "./pages/PreOrder";
 import DefaultLayout from "./components/Layout";
 import Signup from "./pages/SignUp";
+import Browse from "./pages/Browse";
 
 function App() {
   const location = useLocation()
@@ -21,7 +22,9 @@ function App() {
       <Routes location={location} key={location.pathname}>
         <Route path="/Signup" element={<Signup />}></Route>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/portfolio" element={<Portfolio />}></Route>
+        <Route path="/PreOrder" element={<PreOrder />}></Route>
+        <Route path="/browse" element={<Browse />}></Route>
+
       </Routes>
       </AnimatePresence>
     </DefaultLayout>

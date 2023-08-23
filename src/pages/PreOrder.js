@@ -2,7 +2,7 @@ import NavBar from "../components/navbar";
 import { motion } from "framer-motion";
 import Nothing from "../components/empty";
 
-function Portfolio() {
+export default function PreOrder() {
   return (
     <div>
       <NavBar />
@@ -12,5 +12,3 @@ function Portfolio() {
     </div>
   );
 }
-
-export default Portfolio;

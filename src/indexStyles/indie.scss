@@ -417,36 +417,33 @@ button {
   align-items: center;
 }
 
-
+@keyframes spinno {
+  0% {rotate: 0deg;}
+  100% {rotate: 360deg;}
+}
 
 .spin-doctor{
   margin-top: 5em;
   border-radius: 20px;
   background: #dddddd;
   box-shadow: 2px 2px 8px #383838;
-  padding: 4em 2em;
+  padding: 5em 3em;
   display: flex;
   text-align: center;
   flex-direction: column;
   align-items: center;
   .Spin{
-
-    @keyframes spinno {
-      0% {rotate: 45deg;}
-      12% {rotate: 90deg;}
-      24% {rotate: 135deg;}
-      36% {rotate: 180deg;}
-      48% {rotate: 225deg;}
-      60% {rotate: 270deg;}
-      85% {rotate: 315deg;}
-      100% {rotate: 360deg;}
-    }
+    animation-name: spinno;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: forward;
+    
     img{
-      width: 20em;
+      width: 15em;
     }
   }
   .textholder{
-    margin-top: 1em;
+    margin-top: 3em;
     span{
       font-weight: 100;
       font-size: 1.8em;

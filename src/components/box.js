@@ -1,9 +1,11 @@
+import Cardinho from "../Resources/IMG_7026.jpg"
+
 export default function Box() {
   return (
     <div className="BoxBox">
       <div className="smaller-box">
         <div className="top">
-          <img />
+          <img src={Cardinho} />
         </div>
         <div className="bottom">
           <div className="one">

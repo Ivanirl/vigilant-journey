@@ -1,3 +1,9 @@
+.BoxBox {
+  border-radius: 16px;
+  background-color: #6b6969;
+  padding: 4em 4em;
+}
+
 @font-face {
   font-family: Centra;
   src: url(../Resources/font/CentraNo2-Bold.ttf);

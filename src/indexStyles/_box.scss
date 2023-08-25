@@ -2,10 +2,12 @@
     border-radius: 16px;
     background-color: #6b6969;
     padding: 2em 2em;
+    width: fit-content;
     .smaller-box{
         .top{
+            width: 20em;
             img{
-                width: 60%;
+                // width: ;
             }
         }
         .bottom{
@@ -14,6 +16,10 @@
             .one{
                 display: flex;
                 justify-content: space-between;
+                .left{
+                    display: flex;
+                    flex-direction: column;
+                }
             }
         }
     }

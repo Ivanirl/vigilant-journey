@@ -2,9 +2,11 @@
   border-radius: 16px;
   background-color: #6b6969;
   padding: 2em 2em;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-.BoxBox .smaller-box .top img {
-  width: 60%;
+.BoxBox .smaller-box .top {
+  width: 20em;
 }
 .BoxBox .smaller-box .bottom {
   display: flex;
@@ -13,6 +15,10 @@
 .BoxBox .smaller-box .bottom .one {
   display: flex;
   justify-content: space-between;
+}
+.BoxBox .smaller-box .bottom .one .left {
+  display: flex;
+  flex-direction: column;
 }
 
 @font-face {

@@ -1,5 +1,3 @@
-import NavBar from "./navbar";
-
 function DefaultLayout(props) {
   return (
     <div>

@@ -45,6 +45,23 @@
 .BoxBox .smaller-box .bottom .two {
   display: flex;
 }
+.BoxBox .smaller-box .bottom .two .left {
+  display: flex;
+}
+.BoxBox .smaller-box .bottom .two .left .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.BoxBox .smaller-box .bottom .two .left .R {
+  background-color: red;
+}
+.BoxBox .smaller-box .bottom .two .left .B {
+  background-color: blue;
+}
+.BoxBox .smaller-box .bottom .two .left .A {
+  background-color: #383838;
+}
 .BoxBox .smaller-box .bottom .two .right button {
   opacity: 0.8;
   width: -moz-fit-content;

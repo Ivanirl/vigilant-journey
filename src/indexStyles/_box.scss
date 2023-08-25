@@ -66,6 +66,23 @@
       }
       .two {
         display: flex;
+        .left{
+            display: flex;
+            .circle{
+                width: 10px;
+                height: 10px;
+                border-radius: 50%
+            }
+            .R{
+                background-color: red
+            }
+            .B{
+                background-color: blue
+            }
+            .A{
+                background-color: #383838
+            }
+        }
         .right {
           button {
             @include signupbutton();

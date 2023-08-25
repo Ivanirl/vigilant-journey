@@ -12,9 +12,26 @@ export default function Footer() {
           </div>
         </div>
         <div className="right">
-          <ul className="vought1"></ul>
-          <ul className="vought2"></ul>
-          <ul className="vought3"></ul>
+          <ul className="vought1">
+            <span>Links</span>
+            <li>Home</li>
+            <li>Features</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+          </ul>
+          <ul className="vought2">
+          <span>Support</span>
+            <li>FAQ</li>
+            <li>Help Center</li>
+            <li>Security</li>
+            <li>Accesibility</li>
+          </ul>
+          <ul className="vought3">
+          <span>Legal</span>
+            <li>Privacy and Policy</li>
+            <li>Terms and Conditions</li>
+            <li>Legal use</li>
+          </ul>
         </div>
       </div>
     </div>

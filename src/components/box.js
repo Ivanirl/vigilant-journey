@@ -20,7 +20,11 @@ export default function Box() {
           </div>
           <div className="two">
             <div className="left">
-                <div className="color box"></div>
+                <div className="color box">
+                <div className="R circle"></div>
+                <div className="B circle"></div>
+                <div className="G circle"></div>
+                </div>
             </div>
             <div className="right">
                 <button>Add to cart</button>

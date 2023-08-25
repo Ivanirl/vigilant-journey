@@ -6,7 +6,13 @@
   width: fit-content;
 }
 .BoxBox .smaller-box .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 20em;
+}
+.BoxBox .smaller-box .top img {
+  width: 100%;
 }
 .BoxBox .smaller-box .bottom {
   display: flex;

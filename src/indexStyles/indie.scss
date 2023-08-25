@@ -1,5 +1,7 @@
 @import "./box";
 
+@import "./footer";
+
 @font-face {
   font-family: Centra;
   src: url(../Resources/font/CentraNo2-Bold.ttf);
@@ -413,7 +415,7 @@ button {
 }
 
 .bodice{
-  padding-top: 9em;
+  padding-top: 6em;
   display: flex;
   justify-content: center;
   align-items: center;

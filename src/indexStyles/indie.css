@@ -4,7 +4,15 @@
   padding: 2em 2em;
 }
 .BoxBox .smaller-box .top img {
-  width: 80%;
+  width: 60%;
+}
+.BoxBox .smaller-box .bottom {
+  display: flex;
+  flex-direction: column;
+}
+.BoxBox .smaller-box .bottom .one {
+  display: flex;
+  justify-content: space-between;
 }
 
 @font-face {

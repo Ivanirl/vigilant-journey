@@ -5,7 +5,15 @@
     .smaller-box{
         .top{
             img{
-                width: 80%;
+                width: 60%;
+            }
+        }
+        .bottom{
+            display: flex;
+            flex-direction: column;
+            .one{
+                display: flex;
+                justify-content: space-between;
             }
         }
     }

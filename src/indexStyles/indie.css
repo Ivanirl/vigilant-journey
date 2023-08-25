@@ -44,22 +44,27 @@
 }
 .BoxBox .smaller-box .bottom .two {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.BoxBox .smaller-box .bottom .two .left {
+.BoxBox .smaller-box .bottom .two .left .color-box {
   display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  align-items: center;
 }
-.BoxBox .smaller-box .bottom .two .left .circle {
-  width: 10px;
-  height: 10px;
+.BoxBox .smaller-box .bottom .two .left .color-box .circle {
+  width: 1.1em;
+  height: 1.1em;
   border-radius: 50%;
 }
-.BoxBox .smaller-box .bottom .two .left .R {
+.BoxBox .smaller-box .bottom .two .left .color-box .R {
   background-color: red;
 }
-.BoxBox .smaller-box .bottom .two .left .B {
+.BoxBox .smaller-box .bottom .two .left .color-box .B {
   background-color: blue;
 }
-.BoxBox .smaller-box .bottom .two .left .A {
+.BoxBox .smaller-box .bottom .two .left .color-box .A {
   background-color: #383838;
 }
 .BoxBox .smaller-box .bottom .two .right button {

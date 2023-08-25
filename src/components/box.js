@@ -1,4 +1,4 @@
-import Cardinho from "../Resources/IMG_7026.jpg"
+import Cardinho from "../Resources/IMG_7026.jpg";
 
 export default function Box() {
   return (
@@ -20,14 +20,14 @@ export default function Box() {
           </div>
           <div className="two">
             <div className="left">
-                <div className="color box">
+              <div className="color-box">
                 <div className="R circle"></div>
                 <div className="B circle"></div>
-                <div className="G circle"></div>
-                </div>
+                <div className="A circle"></div>
+              </div>
             </div>
             <div className="right">
-                <button>Add to cart</button>
+              <button>Add to cart</button>
             </div>
           </div>
         </div>

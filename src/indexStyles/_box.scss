@@ -66,22 +66,29 @@
       }
       .two {
         display: flex;
-        .left{
+        justify-content: space-between;
+        align-items: center;
+        .left {
+          .color-box {
             display: flex;
-            .circle{
-                width: 10px;
-                height: 10px;
-                border-radius: 50%
+            justify-content: space-between;
+            gap: 4px;
+            align-items: center;
+            .circle {
+              width: 1.1em;
+              height: 1.1em;
+              border-radius: 50%;
             }
-            .R{
-                background-color: red
+            .R {
+              background-color: red;
             }
-            .B{
-                background-color: blue
+            .B {
+              background-color: blue;
             }
-            .A{
-                background-color: #383838
+            .A {
+              background-color: #383838;
             }
+          }
         }
         .right {
           button {

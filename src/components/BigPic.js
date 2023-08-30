@@ -1,8 +1,9 @@
+import Trav from "../Resources/Travis.JPG"
+
 export default function BigPic() {
   return (
-    <div>
-      <img />
-      BIG TRAVIS PICTURE
+    <div className="Trav">
+      <img src={Trav}/>
     </div>
   );
 }

@@ -377,7 +377,7 @@ button {
   }
 }
 
-.Barrister{
+.Barrister {
   min-width: 100%;
   position: fixed;
   top: 5em;
@@ -386,18 +386,18 @@ button {
   justify-content: center;
   border: solid 2px #8d8d8d;
 
-  div{
+  div {
     padding: 1em;
     min-height: 100%;
     border-left: solid 2px #8d8d8d;
-    border-right: solid 2px #8d8d8d
+    border-right: solid 2px #8d8d8d;
   }
 
-  .favbox{
+  .favbox {
     border-left: none;
   }
 
-  ul{
+  ul {
     padding: 0 2.5em;
     display: flex;
     list-style: none;
@@ -406,7 +406,7 @@ button {
     // border-right: solid 2px #8d8d8d;
     gap: 80px;
 
-    li{
+    li {
       font-weight: 100;
       padding: 0;
       cursor: pointer;
@@ -414,7 +414,36 @@ button {
   }
 }
 
-.bodice{
+.toggler {
+  position: fixed;
+  top: 8.5em;
+  right: 0;
+  border: solid 2px #8d8d8d;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  padding: 0 2em;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+  }
+  .options{
+    li{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      .rectangle{
+        background-color: #8d8d8d;
+        width: 40px;
+        height: 3px;
+      }
+    }
+  }
+}
+
+.bodice {
   padding-top: 6em;
   display: flex;
   justify-content: center;
@@ -422,11 +451,15 @@ button {
 }
 
 @keyframes spinno {
-  0% {rotate: 0deg;}
-  100% {rotate: 360deg;}
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
 }
 
-.spin-doctor{
+.spin-doctor {
   margin-top: 5em;
   border-radius: 20px;
   background: #dddddd;
@@ -436,25 +469,24 @@ button {
   text-align: center;
   flex-direction: column;
   align-items: center;
-  .Spin{
+  .Spin {
     animation-name: spinno;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: forward;
-    
-    img{
+
+    img {
       width: 15em;
     }
   }
-  .textholder{
+  .textholder {
     margin-top: 3em;
-    span{
+    span {
       font-weight: 100;
       font-size: 1.8em;
     }
   }
 }
-
 
 ////customized navbars for the responsive navbar////
 

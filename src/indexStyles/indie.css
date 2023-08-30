@@ -516,6 +516,33 @@ button {
   cursor: pointer;
 }
 
+.toggler {
+  position: fixed;
+  top: 8.5em;
+  right: 0;
+  border: solid 2px #8d8d8d;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  padding: 0 2em;
+}
+.toggler ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 3em;
+}
+.toggler .options li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.toggler .options li .rectangle {
+  background-color: #8d8d8d;
+  width: 40px;
+  height: 3px;
+}
+
 .bodice {
   padding-top: 6em;
   display: flex;

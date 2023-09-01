@@ -1,4 +1,3 @@
-import TwoBars from "../components/NavandSubbar";
 import Box from "../components/box";
 import Footer from "../components/Footer";
 import ThreeBars from "../components/threeBars";

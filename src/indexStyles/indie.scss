@@ -365,6 +365,7 @@ button {
 }
 
 .Barrister {
+  z-index: 10000;
   min-width: 100%;
   position: fixed;
   top: 5.5em;
@@ -404,6 +405,7 @@ button {
 }
 
 .toggler {
+  z-index: 10000;
   position: fixed;
   top: 9em;
   right: 0;
@@ -443,10 +445,10 @@ button {
   left: 4em;
   top: 10.5em;
   img{
-    width: 46%;
+    width: 26.5em;
+    height: 39em;
   }
 }
-///
 
 .bodice {
   padding-top: 6em;
@@ -456,12 +458,22 @@ button {
 }
 
 .Browse{
-  padding-top: 7em;
-  padding-left: 28em;
+  display: block;
+  padding-top: 10em;
+  padding-left: 27em;
   .caro{
+    padding-top: 0;
+    height: fit-content;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    scale: 0.87;
+    gap: 3em;
+    width: 80em;
     .BoxBox{
-      scale: 0.9;
+      //scale: 0.7;
+      width: fit-content;
+      height: fit-content;
     }
   }
 }

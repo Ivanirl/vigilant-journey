@@ -4,23 +4,27 @@ h1, span, p, h2 {
 
 .BoxBox {
   margin: 0;
-  border-radius: 1.5em;
-  background-color: #ffffff;
-  padding: 2em 2em;
-  box-shadow: 1px 4px 8px #8b8b8b;
+  border-radius: 1em;
+  padding: 1em 10px;
   height: -moz-fit-content;
   height: fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
+.BoxBox:hover {
+  box-shadow: 0px 17px 18px #e4e4e4;
+}
 .BoxBox .smaller-box .top {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 20em;
+  width: 23em;
+  margin-bottom: 1.2em;
 }
 .BoxBox .smaller-box .top img {
   width: 100%;
+  border-radius: 10px;
+  box-shadow: 1px 4px 8px #8b8b8b;
 }
 .BoxBox .smaller-box .bottom {
   display: flex;
@@ -96,6 +100,15 @@ h1, span, p, h2 {
   opacity: 1;
   color: rgb(32, 32, 32);
   background: none;
+}
+
+.overlay {
+  z-index: 10001;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 li {
@@ -602,7 +615,7 @@ button {
   }
 }
 .spin-doctor {
-  margin-top: 5em;
+  margin: 5em 0;
   border-radius: 20px;
   background: #dddddd;
   box-shadow: 2px 2px 8px #383838;

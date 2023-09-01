@@ -14,6 +14,10 @@ export default function Browse() {
           <Box />
           <Box />
           <Box /> 
+          <Box /> 
+          <Box /> 
+          <Box /> 
+          <Box /> 
         </div>
       </div>
       {/* <Footer /> */}

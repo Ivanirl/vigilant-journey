@@ -1,4 +1,7 @@
-h1, span, p, h2 {
+h1,
+span,
+p,
+h2 {
   cursor: default;
 }
 
@@ -102,13 +105,55 @@ h1, span, p, h2 {
   background: none;
 }
 
-.overlay {
-  z-index: 10001;
+.visibleO {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  z-index: 2000990;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.visibleO .cardi {
+  background: #e4e4e4;
+  border-radius: 12px;
+  padding: 3em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.visibleO .cardi button {
+  opacity: 0.8;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: bold;
+  padding: 9px 11px;
+  font-size: 0.8em;
+  border: solid rgb(59, 59, 59) 2px;
+  background: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+.visibleO .cardi button:hover {
+  opacity: 1;
+  color: rgb(255, 255, 255);
+  background: rgb(49, 49, 49);
+}
+.visibleO .cardi button:active {
+  opacity: 1;
+  color: rgb(32, 32, 32);
+  background: none;
+}
+
+.invisibleO {
+  display: none;
 }
 
 li {
@@ -594,7 +639,7 @@ button {
   height: fit-content;
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: flex-start;
   scale: 0.87;
   gap: 3em;
   width: 80em;

@@ -5,3 +5,26 @@
     color: rgb(37, 37, 37);
     transition: all 0.2s ease;
 }
+
+.Price{
+    padding: 4em 1em;
+    background: pink;
+    text-align: center;
+    border-radius: 10px;
+    span{
+        display: block;
+    }
+
+    .pricy{
+        padding: 0 1em;
+        h1{
+            font-weight: 100;
+            font-size: 3em;
+        }
+        div{
+            .para{
+                font-size: 1.1em;
+            }
+        }
+    }
+}

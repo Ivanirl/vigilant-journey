@@ -7,7 +7,7 @@ export default function Random() {
       <NavBar />
       <div className="bodice">
         <div className="swarm">
-            
+            <h1>BABY</h1>
         </div>
       </div>
       <Footer />

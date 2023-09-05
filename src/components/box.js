@@ -7,7 +7,12 @@ export default function Box() {
 
   return (
     <div className="BoxBox">
-      <div className="smaller-box">
+      <motion.div
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.7, ease: [0.6, -0.05, 0.01, 0.99] }}
+        className="smaller-box"
+      >
         <div className="top">
           <img src={Cardinho} />
         </div>
@@ -41,7 +46,7 @@ export default function Box() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
       <motion.div
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -53,7 +58,13 @@ export default function Box() {
       >
         <div className="cardi">
           <h1>Time to go back now</h1>
-          <button onClick={()=>{openoverlay(!overlay)}}>Return</button>
+          <button
+            onClick={() => {
+              openoverlay(!overlay);
+            }}
+          >
+            Return
+          </button>
         </div>
       </motion.div>
     </div>

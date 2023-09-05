@@ -169,9 +169,11 @@ h2 {
   background: pink;
   text-align: center;
   border-radius: 10px;
+  margin-bottom: 4em;
 }
 .Price span {
   display: block;
+  margin-top: 4px;
 }
 .Price .pricy {
   padding: 0 1em;

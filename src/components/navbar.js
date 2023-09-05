@@ -6,7 +6,6 @@ function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
   const [menuha, setMenuha] = useState(false);
 
-
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   };
@@ -138,6 +137,26 @@ function NavBar() {
                 }}
               >
                 <span>Pre-Order</span>
+              </Link>
+            </li>{" "}
+            <li>
+              <Link
+                to="/rando"
+                className={
+                  activeLink === "rando"
+                    ? "active navbar-link"
+                    : "inactive navbar-link"
+                }
+                onClick={() => {
+                  if (window.screenX < 531) {
+                    onUpdateActiveLink("rando");
+                  } else {
+                    onUpdateActiveLink("rando");
+                    setMenuha(!menuha);
+                  }
+                }}
+              >
+                <span>rando</span>
               </Link>
             </li>
           </ul>

@@ -12,6 +12,7 @@ import PreOrder from "./pages/PreOrder";
 import DefaultLayout from "./components/Layout";
 import Signup from "./pages/SignUp";
 import Browse from "./pages/Browse";
+import Random from "./pages/weirdnewpage";
 
 function App() {
   const location = useLocation()
@@ -24,7 +25,7 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/PreOrder" element={<PreOrder />}></Route>
         <Route path="/browse" element={<Browse />}></Route>
-
+        <Route path="/rando" element={<Random />}></Route>
       </Routes>
       </AnimatePresence>
     </DefaultLayout>

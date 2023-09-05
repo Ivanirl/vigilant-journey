@@ -737,7 +737,7 @@ button {
     right: 0;
     gap: 10em;
     flex-direction: column;
-    background: #000;
+    background: #8d8d8d;
     padding: 2em;
     padding-top: 0;
     height: 100%;
@@ -760,6 +760,7 @@ button {
     position: fixed;
     width: 100%;
     z-index: 10000;
+    color: #dddddd;
   }
   .NavBar button .mens {
     display: inline-block;
@@ -801,7 +802,7 @@ button {
     top: -1em;
     right: 0;
     flex-direction: column;
-    background: #000;
+    background: #fff;
     padding: 2em;
     height: 100%;
     width: 100%;

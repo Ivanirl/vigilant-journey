@@ -10,7 +10,7 @@ export default function Random() {
         <div className="swarm">
           <h1>BABY</h1>
           <div className="oui">
-            <table>
+            <table >
               <tr>
                 <td>
                   <Price />

@@ -21,7 +21,7 @@ function NavBar() {
       <div className="container">
         <div className="rightboy">
           <div className="logo">
-            <Link to="/" onClick={() => onUpdateActiveLink("home")}>
+            <Link to="/oriflame" onClick={() => onUpdateActiveLink("oriflame")}>
               <img src={Logo} className="logoimage" alt="logo image" />
             </Link>
           </div>

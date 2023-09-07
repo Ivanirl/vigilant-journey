@@ -249,8 +249,16 @@ li {
   padding: 2em;
   text-align: right;
 }
+.swarm span {
+  display: block;
+  text-align: center;
+}
 .swarm .oui table tr {
   margin: 30px;
+}
+
+.oho {
+  padding-top: 18em;
 }
 
 @font-face {
@@ -371,10 +379,6 @@ a {
   opacity: 1;
   color: rgb(37, 37, 37);
   background: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 .mens {

@@ -9,6 +9,7 @@ export default function Random() {
       <div className="bodice">
         <div className="swarm">
           <h1>BABY</h1>
+          <span>This is a page I will use to demonstrate my ability to create pricing sections.</span>
           <div className="oui">
             <table >
               <tr>

@@ -2,6 +2,7 @@
 @import "./Price";
 @import "./footer";
 @import "./pagestyles/weirdnewpage";
+@import "./oriflame/oriflae";
 
 @font-face {
   font-family: Centra;
@@ -167,10 +168,6 @@ a {
       }
     }
   }
-}
-
-a {
-  text-decoration: none;
 }
 
 .mens {

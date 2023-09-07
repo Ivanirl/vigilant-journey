@@ -1,7 +1,10 @@
 .swarm{
     padding: 2em;
     text-align: right;
-
+    span{
+        display: block;
+        text-align: center;
+    }
     .oui{
         table{
             tr{

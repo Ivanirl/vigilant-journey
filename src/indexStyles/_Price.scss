@@ -22,15 +22,15 @@
     align-items: center;
     margin-top: 4px;
     color: white;
-    max-width: 16em;
+    max-width: 14em;
   }
 
   .pricy {
-    padding: 0 1em;
+    padding: 0 1.9em;
     h1 {
       margin-top: 0;
       font-weight: 100;
-      font-size: 3em;
+      font-size: 2em;
       color: white;
     }
     div {
@@ -39,8 +39,8 @@
       flex-direction: column;
       justify-content: space-around;
       gap: 4px;
-      .para {
-        font-size: 1.1em;
+      .para, .sub {
+        font-size: 1em;
       }
     }
   }

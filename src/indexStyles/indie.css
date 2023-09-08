@@ -257,7 +257,7 @@ li {
   margin: 30px;
 }
 
-.NavBar {
+.Nav {
   padding: 1em 3.1em;
   display: block;
   position: fixed;
@@ -265,40 +265,61 @@ li {
   z-index: 10000;
   background-color: #f5f5f5;
 }
-.NavBar .container {
+.Nav input {
+  opacity: 0.6;
+  text-align: left;
+  border-radius: 13px;
+  height: 2em;
+  border: none;
+  width: 25em;
+  margin: 6px 20px;
+  padding: 1.3em;
+}
+.Nav input:hover {
+  opacity: 0.8;
+}
+.Nav input:focus {
+  opacity: 1;
+  outline: none;
+}
+.Nav .container {
   display: flex;
   justify-content: space-between;
   padding: 0 0.1em;
   padding-right: 1.3em;
 }
-.NavBar .container .rightboy {
+.Nav .container .rightboy {
   display: flex;
   justify-content: space-between;
-  gap: 11em;
+  gap: 9em;
+  align-items: center;
 }
-.NavBar .container .rightboy .logo {
+.Nav .container .rightboy .sololink {
+  font-weight: 100;
+}
+.Nav .container .rightboy .logo {
   padding: 0;
   padding-top: 5px;
   display: flex;
   align-items: center;
 }
-.NavBar .container .rightboy .logo .logoimage {
+.Nav .container .rightboy .logo .logoimage {
   width: 10em;
 }
-.NavBar .container .closedNav {
+.Nav .container .closedNav {
   cursor: pointer;
   color: rgb(37, 37, 37);
   display: flex;
   gap: 8em;
   font-weight: lighter;
 }
-.NavBar .container .getstarted {
+.Nav .container .getstarted {
   display: flex;
   align-items: center;
   gap: 2em;
   transition: ease-in-out 2s;
 }
-.NavBar .container .getstarted .getStarted {
+.Nav .container .getstarted .getStarted {
   width: -moz-fit-content;
   width: fit-content;
   font-weight: bold;
@@ -314,17 +335,17 @@ li {
   transition: linear 0.2s;
   opacity: 0.7;
 }
-.NavBar .container .getstarted .getStarted:hover {
+.Nav .container .getstarted .getStarted:hover {
   opacity: 1;
   color: black;
   background: aliceblue;
 }
-.NavBar .container .getstarted .getStarted:active {
+.Nav .container .getstarted .getStarted:active {
   opacity: 1;
   color: white;
   background: none;
 }
-.NavBar .container .getstarted .getStarted:hover {
+.Nav .container .getstarted .getStarted:hover {
   opacity: 1;
   color: rgb(37, 37, 37);
   background: none;
@@ -661,6 +682,7 @@ button {
   font-size: 0.8em;
 }
 .SignUp .body .right .input-container .input-field input {
+  text-align: left;
   border-radius: 9px;
   height: 2em;
   border: none;

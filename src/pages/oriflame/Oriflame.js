@@ -1,12 +1,15 @@
 import NavBar from "../../components_oriflame/navbar";
+import Banner from "../../components_oriflame/Banner";
+import Carousel from "../../components_oriflame/Carousel";
+
 
 export default function () {
   return (
     <div>
       <NavBar />
       <div className="oho">
-        <h1>THIS IS OUR HOMEPAGE</h1>
-        <span>entertwined</span>
+        <Banner />
+        <Carousel/>
       </div>
     </div>
   );

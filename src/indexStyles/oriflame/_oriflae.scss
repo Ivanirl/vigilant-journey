@@ -1,3 +1,7 @@
+*{
+    transition: ease 0.2;
+}
+
 @mixin baton {
   width: fit-content;
   font-weight: bold;
@@ -45,25 +49,31 @@
   }
 }
 
+
 .Nav {
-  padding: 1em 3.1em;
+  padding: 0.5em 3.1em;
+  padding-bottom: 0;
   display: block;
   position: fixed;
   width: 100%;
   z-index: 10000;
-  background-color: #f5f5f5;
+  background-color: #FFFFFF;
+
+    .olodo{
+        font-size: 1.3em;
+    }
 
    input {
+    font-size: 1.2em;
     background: #c7c7c7;
     opacity: 0.6;
     text-align: left;
-    border-radius: 13px;
+    border-radius: 17px;
     height: 2em;
     border: none;
-    width: 25em;
+    width: 50em;
     margin: 6px 20px;
-    // box-shadow: 2px 2px 8px #8d8d8d;
-    padding: 1.3em;
+    padding: 1.4em;
     
     &:hover{
         opacity: 0.8;
@@ -80,12 +90,12 @@
     justify-content: space-between;
     padding: 0 0.1em;
     padding-right: 1.3em;
-    //border-bottom: solid rgb(156, 156, 156) 1px;
+    align-items: center;
 
     .rightboy {
       display: flex;
       justify-content: space-between;
-      gap: 9em;
+      gap: 0;
       align-items: center;
 
       .sololink{
@@ -100,6 +110,7 @@
 
         .logoimage {
           width: 10em;
+          zoom: 1.5;
         }
       }
     }
@@ -108,8 +119,10 @@
       cursor: pointer;
       color: rgb(37, 37, 37);
       display: flex;
-      gap: 8em;
+      gap: 3em;
       font-weight: lighter;
+      padding: 0;
+      justify-content: left;
     }
 
     .getstarted {
@@ -133,14 +146,19 @@
       }
     }
   }
-}
 
-.mens {
-  display: none;
-}
-
-.womens {
-  display: none;
+  .mens {
+    display: block;
+    &:hover{
+        .ops{
+            height: 3px;
+        }
+      }
+  }
+  
+  .womens {
+    display: none;
+  }
 }
 
 button {
@@ -170,5 +188,42 @@ button {
 }
 
 .oho {
-  padding-top: 18em;
+  padding-top: 6em;
+  background: #FFFFFF;
+}
+
+.banner{
+    background-color: rgb(1, 145, 145);
+    padding: 1em 0.5em;
+    font-size: 1.1em;
+    font-weight: 200;
+    position: relative;
+    .cont{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span{
+            color: #f5f5f5;
+        }
+        button{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 4px;
+            right: 13px;
+            svg{
+                scale: 0.5;
+            }
+        }
+    }
+}
+
+.noshow{
+    display: none;
+}
+
+.BigCaro{
+    img{
+        width: 100%;
+    }
 }

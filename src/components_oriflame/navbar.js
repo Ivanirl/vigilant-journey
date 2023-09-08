@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Logo from "../Resources/Logo=hover.png";
+import Logo from "../Resources/Oriflame_logo.png";
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
@@ -19,33 +19,6 @@ function NavBar() {
     <div className="Nav">
       <div className="container">
         <div className="rightboy">
-          <div className="logo">
-            <Link to="/" onClick={() => onUpdateActiveLink("home")}>
-              <img src={Logo} className="logoimage" alt="logo image" />
-            </Link>
-          </div>
-          <span className="sololink">
-            <Link
-              to="/oriflame"
-              className={
-                activeLink === "oriflame" ? "active navbar-link" : "inactive navbar-link"
-              }
-              onClick={() => {
-                if (window.screenX < 531) {
-                  onUpdateActiveLink("oriflame");
-                } else {
-                  onUpdateActiveLink("oriflame");
-                  setMenuha(!menuha);
-                }
-              }}
-            >
-              <span>Home</span>
-            </Link>
-          </span>
-          <div className="getstarted">
-            <div className="seperator"></div>
-            <input placeholder="Search"></input>
-          </div>
           <button
             className="mens"
             onClick={() => {
@@ -54,16 +27,26 @@ function NavBar() {
           >
             <svg
               width="49"
-              height="16"
-              viewBox="0 0 49 16"
+              height="25"
+              viewBox="0 0 51 18"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <rect width="49" height="3" rx="1.5" fill="#D9D9D9" />
-              <rect y="13" width="49" height="3" rx="1.5" fill="#D9D9D9" />
+              <rect className="ops thefirst" width="32" height="2.5" rx="1.5" fill="#6e6e6e" />
+              <rect className="ops thefirst" y="9" width="32" height="2.5" rx="1.5" fill="#6e6e6e" />
+              <rect className="ops thesecond" y="17" width="32" height="2.5" rx="1.5" fill="#6e6e6e" />
             </svg>
           </button>
 
+          <div className="logo">
+            <Link to="/" onClick={() => onUpdateActiveLink("home")}>
+              <img src={Logo} className="logoimage" alt="logo image" />
+            </Link>
+          </div>
+          <div className="getstarted">
+            <div className="seperator"></div>
+            <input placeholder="Search"></input>
+          </div>
           <ul className={menuha ? "navigation" : "closedNav"} id="nav-bubble">
             <li className="bubble-close">
               <button
@@ -85,7 +68,7 @@ function NavBar() {
                     height="3"
                     rx="1.5"
                     transform="rotate(42.0982 8.01123 0)"
-                    fill="#D9D9D9"
+                    fill="#6e6e6e"
                   />
                   <rect
                     x="6.22681"
@@ -94,7 +77,7 @@ function NavBar() {
                     height="3"
                     rx="1.5"
                     transform="rotate(-45.3915 6.22681 34.8887)"
-                    fill="#D9D9D9"
+                    fill="#6e6e6e"
                   />
                 </svg>
               </button>
@@ -103,7 +86,9 @@ function NavBar() {
               <Link
                 to="/filler"
                 className={
-                  activeLink === "filler" ? "active navbar-link" : "navbar-link"
+                  activeLink === "filler"
+                    ? "active navbar-link"
+                    : "inactive navbar-link"
                 }
                 onClick={() => {
                   if (window.screenX < 531) {
@@ -114,7 +99,7 @@ function NavBar() {
                   }
                 }}
               >
-                <span>Filler</span>
+                <span className="olodo">SIGN IN</span>
               </Link>
             </li>
             <li>
@@ -134,7 +119,7 @@ function NavBar() {
                   }
                 }}
               >
-                <span>Filler 2</span>
+                <span>Icon</span>
               </Link>
             </li>
           </ul>

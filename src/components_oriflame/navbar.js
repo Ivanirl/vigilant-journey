@@ -16,13 +16,35 @@ function NavBar() {
   };
 
   return (
-    <div className="NavBar">
+    <div className="Nav">
       <div className="container">
         <div className="rightboy">
           <div className="logo">
             <Link to="/" onClick={() => onUpdateActiveLink("home")}>
               <img src={Logo} className="logoimage" alt="logo image" />
             </Link>
+          </div>
+          <span className="sololink">
+            <Link
+              to="/oriflame"
+              className={
+                activeLink === "oriflame" ? "active navbar-link" : "inactive navbar-link"
+              }
+              onClick={() => {
+                if (window.screenX < 531) {
+                  onUpdateActiveLink("oriflame");
+                } else {
+                  onUpdateActiveLink("oriflame");
+                  setMenuha(!menuha);
+                }
+              }}
+            >
+              <span>Home</span>
+            </Link>
+          </span>
+          <div className="getstarted">
+            <div className="seperator"></div>
+            <input placeholder="Search"></input>
           </div>
           <button
             className="mens"
@@ -79,24 +101,6 @@ function NavBar() {
             </li>
             <li>
               <Link
-                to="/oriflame"
-                className={
-                  activeLink === "oriflame" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => {
-                  if (window.screenX < 531) {
-                    onUpdateActiveLink("oriflame");
-                  } else {
-                    onUpdateActiveLink("oriflame");
-                    setMenuha(!menuha);
-                  }
-                }}
-              >
-                <span>Home</span>
-              </Link>
-            </li>
-            <li>
-              <Link
                 to="/filler"
                 className={
                   activeLink === "filler" ? "active navbar-link" : "navbar-link"
@@ -134,13 +138,6 @@ function NavBar() {
               </Link>
             </li>
           </ul>
-        </div>
-
-        <div className="getstarted">
-          <div className="seperator"></div>
-          <button className="getStarted" onClick={sign}>
-            GET STARTED
-          </button>
         </div>
       </div>
     </div>

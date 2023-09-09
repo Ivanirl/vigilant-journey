@@ -4,7 +4,7 @@ export default function Carousel(){
     return(
         <div className="BigCaro">
             <img src={herobiggy} />
-            <button>SHOP NOW</button>
+            <button className="themebutton1">SHOP NOW</button>
             this is a carousel
         </div>
     )

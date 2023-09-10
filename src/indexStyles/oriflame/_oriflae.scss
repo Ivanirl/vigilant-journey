@@ -1,22 +1,22 @@
-*{
-    transition: ease 0.2;
+* {
+  transition: ease 0.2;
 }
 
 @mixin baton {
   width: fit-content;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 0.9em 2.1em;
   font-size: 1em;
-  border: solid rgb(91, 92, 92) 2px;
+  border: solid rgb(91, 92, 92) 1.8px;
   background: none;
-  border-radius: 10px;
+  border-radius: 23px;
   cursor: pointer;
   transition: ease-in-out 0.2s;
 
   &:hover {
     opacity: 1;
     color: black;
-    background: aliceblue;
+    background: rgb(222, 225, 228);
   }
   &:active {
     opacity: 1;
@@ -50,7 +50,6 @@
   }
 }
 
-
 .Nav {
   padding: 0.5em 3.1em;
   padding-bottom: 0;
@@ -58,13 +57,13 @@
   position: fixed;
   width: 100%;
   z-index: 10000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 
-    .olodo{
-        font-size: 1.3em;
-    }
+  .olodo {
+    font-size: 1.3em;
+  }
 
-   input {
+  input {
     font-size: 1.2em;
     background: #c7c7c7;
     opacity: 0.6;
@@ -75,13 +74,13 @@
     width: 50em;
     margin: 6px 20px;
     padding: 1.4em;
-    
-    &:hover{
-        opacity: 0.8;
+
+    &:hover {
+      opacity: 0.8;
     }
 
     &:focus {
-        opacity: 1;
+      opacity: 1;
       outline: none;
     }
   }
@@ -99,7 +98,7 @@
       gap: 0;
       align-items: center;
 
-      .sololink{
+      .sololink {
         font-weight: 100;
       }
 
@@ -129,7 +128,7 @@
     .getstarted {
       display: flex;
       align-items: center;
-      gap: 2em;
+      gap: 1.5em;
       transition: ease-in-out 2s;
 
       .getStarted {
@@ -150,13 +149,13 @@
 
   .mens {
     display: block;
-    &:hover{
-        .ops{
-            height: 3px;
-        }
+    &:hover {
+      .ops {
+        height: 4px;
       }
+    }
   }
-  
+
   .womens {
     display: none;
   }
@@ -190,151 +189,172 @@ button {
 
 .oho {
   padding-top: 6em;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
-.banner{
-    background-color: rgb(1, 145, 145);
-    padding: 1em 0.5em;
-    font-size: 1.1em;
+.banner {
+  background-color: rgb(1, 145, 145);
+  padding: 1em 0.5em;
+  font-size: 1.1em;
+  font-weight: 200;
+  position: relative;
+  .cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      color: #f5f5f5;
+    }
+    button {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 4px;
+      right: 13px;
+      svg {
+        scale: 0.5;
+      }
+    }
+  }
+}
+
+.noshow {
+  display: none;
+}
+
+.BigCaro {
+  position: relative;
+  img {
+    width: 100%;
+  }
+  button {
+    @include signupbutton;
+    scale: 1;
+  }
+
+  .rootbeer {
+    position: absolute;
+    bottom: 7.2em;
+    left: 65em;
+    background: #ebb0c6;
+    padding: 2em;
+    padding-top: 8px;
+  }
+}
+
+.LinkBar {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6em;
     font-weight: 200;
-    position: relative;
-    .cont{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        span{
-            color: #f5f5f5;
-        }
-        button{
-            display: flex;
-            align-items: center;
-            position: absolute;
-            top: 4px;
-            right: 13px;
-            svg{
-                scale: 0.5;
-            }
-        }
-    }
-}
-
-.noshow{
-    display: none;
-}
-
-.BigCaro{
-    position: relative;
-    img{
-        width: 100%;
-    }
-    button{
-        @include signupbutton;
-        scale: 1;
-    }
-
-    .rootbeer{
-        position: absolute;
-        bottom: 7.5em;
-        right: 23em;
-        background: #EBB0C6;
-        padding: 2em;
-        padding-top: 8px;
-        
-    }
-}
-
-.LinkBar{
-    ul{
-        display: flex;
-        justify-content: space-between;
-        padding: 0 6em;
-        font-weight: 200;
-        opacity: 0.8;
-    }
+    opacity: 0.8;
+  }
 }
 
 .CardA {
-    margin: 0;
-    border-radius: 1em;
-    padding: 1em 10px;
-    height: fit-content;
-    width: fit-content;
-  
-    &:hover {
-      box-shadow: 0px 17px 18px #e4e4e4;
+  margin: 0;
+  border-radius: 1em;
+  padding: 1em 10px;
+  height: fit-content;
+  width: fit-content;
+
+  &:hover {
+    box-shadow: 0px 17px 18px #e4e4e4;
+  }
+  .smaller-box {
+    .top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 23em;
+      margin-bottom: 1.2em;
+      img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 1px 4px 8px #8b8b8b;
+      }
     }
-    .smaller-box {
-      .top {
+    .bottom {
+      display: flex;
+      flex-direction: column;
+      .one {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 23em;
-        margin-bottom: 1.2em;
-        img {
-          width: 100%;
-          border-radius: 10px;
-          box-shadow: 1px 4px 8px #8b8b8b;
+        justify-content: space-between;
+        .left {
+          display: flex;
+          flex-direction: column;
+          .big {
+            font-size: 1.2em;
+            font-weight: 100;
+          }
+          .small {
+            font-size: 1em;
+          }
+          .red {
+            color: red;
+            font-size: 0.8em;
+          }
+        }
+        .right {
+          font-weight: 100;
+          font-size: 1.2em;
         }
       }
-      .bottom {
+      .two {
         display: flex;
-        flex-direction: column;
-        .one {
-          display: flex;
-          justify-content: space-between;
-          .left {
+        justify-content: space-between;
+        align-items: center;
+        .left {
+          .color-box {
             display: flex;
-            flex-direction: column;
-            .big {
-              font-size: 1.2em;
-              font-weight: 100;
+            justify-content: space-between;
+            gap: 4px;
+            align-items: center;
+            .circle {
+              width: 1.1em;
+              height: 1.1em;
+              border-radius: 50%;
             }
-            .small {
-              font-size: 1em;
+            .R {
+              background-color: red;
             }
-            .red {
-              color: red;
-              font-size: 0.8em;
+            .B {
+              background-color: blue;
             }
-          }
-          .right {
-            font-weight: 100;
-            font-size: 1.2em;
+            .A {
+              background-color: #383838;
+            }
           }
         }
-        .two {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          .left {
-            .color-box {
-              display: flex;
-              justify-content: space-between;
-              gap: 4px;
-              align-items: center;
-              .circle {
-                width: 1.1em;
-                height: 1.1em;
-                border-radius: 50%;
-              }
-              .R {
-                background-color: red;
-              }
-              .B {
-                background-color: blue;
-              }
-              .A {
-                background-color: #383838;
-              }
-            }
-          }
-          .right {
-            button {
-              @include signupbutton();
-            }
+        .right {
+          button {
+            @include signupbutton();
           }
         }
       }
     }
   }
+}
+
+.wnsection{
+  margin-top: 6em;
+  .header{
+    position: relative;
+    h1{
+      letter-spacing: 1px;
+      font-size: 2.7em;
+    }
+    button{
+      @include baton();
+      position: absolute;
+      top: 0;
+      right: 4em;
+    }
+  }
+  .showcase{
+    .products{
+      display: flex;
+    }
+  }
+}

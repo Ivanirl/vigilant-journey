@@ -86,15 +86,15 @@ function NavBar() {
               <Link
                 to="/filler"
                 className={
-                  activeLink === "filler"
+                  activeLink === "/filler"
                     ? "active navbar-link"
                     : "inactive navbar-link"
                 }
                 onClick={() => {
                   if (window.screenX < 531) {
-                    onUpdateActiveLink("filler");
+                    onUpdateActiveLink("/filler");
                   } else {
-                    onUpdateActiveLink("filler");
+                    onUpdateActiveLink("/filler");
                     setMenuha(!menuha);
                   }
                 }}
@@ -106,15 +106,15 @@ function NavBar() {
               <Link
                 to="/filler2"
                 className={
-                  activeLink === "filler2"
+                  activeLink === "/filler2"
                     ? "active navbar-link"
                     : "navbar-link"
                 }
                 onClick={() => {
                   if (window.screenX < 531) {
-                    onUpdateActiveLink("filler2");
+                    onUpdateActiveLink("/filler2");
                   } else {
-                    onUpdateActiveLink("filler2");
+                    onUpdateActiveLink("/filler2");
                     setMenuha(!menuha);
                   }
                 }}

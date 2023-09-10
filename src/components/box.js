@@ -56,6 +56,7 @@ export default function Box() {
           openoverlay(!overlay);
         }}
       >
+        {/* CHECK LATER IF TRANSFERRING THE MODAL TO THE PAGE COMPONENET WILL HELP SOLVE THE STYLING OVERLAY ISSUE */}
         <div className="cardi">
           <h1>Time to go back now</h1>
           <button

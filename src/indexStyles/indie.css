@@ -434,8 +434,52 @@ button {
   display: none;
 }
 
+.BigCaro {
+  position: relative;
+}
 .BigCaro img {
   width: 100%;
+}
+.BigCaro button {
+  color: #f8f8f8;
+  opacity: 0.6;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 200;
+  padding: 0.9em 2.7em;
+  font-size: 1.2em;
+  border: none;
+  background: rgb(82, 82, 82);
+  border-radius: 23px;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+  scale: 1;
+}
+.BigCaro button:hover {
+  opacity: 0.7;
+  color: rgb(255, 255, 255);
+  background: rgb(49, 49, 49);
+}
+.BigCaro button:active {
+  opacity: 1;
+  color: rgb(32, 32, 32);
+  background: none;
+}
+.BigCaro .rootbeer {
+  position: absolute;
+  bottom: 7.5em;
+  right: 23em;
+  background: #EBB0C6;
+  padding: 2em;
+  padding-top: 8px;
+}
+
+.LinkBar ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6em;
+  font-weight: 200;
+  opacity: 0.8;
 }
 
 @font-face {

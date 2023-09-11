@@ -18,7 +18,6 @@ export default function CardA() {
             <div className="left">
               <span className="big">JORDAN</span>
               <span className="small">Retro Low OG SP</span>
-              <span className="red">Travis Scott Reverse Mocha</span>
             </div>
             <div className="right">
               <span>$1,283</span>

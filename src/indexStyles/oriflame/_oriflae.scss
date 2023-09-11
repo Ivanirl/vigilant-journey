@@ -267,7 +267,7 @@ button {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 23em;
+      width: 13em;
       margin-bottom: 1.2em;
       img {
         width: 100%;
@@ -352,7 +352,27 @@ button {
       right: 4em;
     }
   }
+  
   .showcase{
+    display: flex;
+    padding: 0 3em;
+    .imgCont{
+      position: relative;
+      img{
+        object-fit: cover;
+        object-position: bottom 3;
+        width: 50em;
+        height: 40em;
+      }
+      button{
+        @include signupbutton();
+        color: rgb(136, 136, 136);
+        background: rgb(236, 236, 236);
+        position: absolute;
+        left: 35%;
+        bottom: 8%;
+      }
+    }
     .products{
       display: flex;
     }

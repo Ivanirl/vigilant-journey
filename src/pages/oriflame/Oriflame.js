@@ -1,3 +1,5 @@
+import head from "../../Resources/Head.JPG"
+
 import NavBar from "../../components_oriflame/navbar";
 import Banner from "../../components_oriflame/Banner";
 import Carousel from "../../components_oriflame/Carousel";
@@ -19,7 +21,7 @@ export default function () {
           </div>
           <div className="showcase">
             <div className="imgCont">
-              <img />
+              <img src={head} />
               <button>GET STARTED</button>
             </div>
             <div className="products">

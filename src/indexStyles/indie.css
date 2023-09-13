@@ -437,6 +437,7 @@ button {
 
 .BigCaro {
   position: relative;
+  margin-bottom: 0;
 }
 .BigCaro img {
   width: 100%;
@@ -475,10 +476,15 @@ button {
   padding-top: 8px;
 }
 
+.LinkBar {
+  background: #f7f7f7;
+  box-shadow: 1px 1px 1px #e7e7e7;
+  padding: 0.5em 6em;
+  margin-top: 0;
+}
 .LinkBar ul {
   display: flex;
   justify-content: space-between;
-  padding: 0 6em;
   font-weight: 200;
   opacity: 0.8;
 }

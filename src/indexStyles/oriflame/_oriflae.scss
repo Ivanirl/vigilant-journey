@@ -244,10 +244,13 @@ button {
 }
 
 .LinkBar {
+  background: #f7f7f7;
+  box-shadow: 1px 1px 1px #e7e7e7;
+  padding: 0.5em 6em;
+
   ul {
     display: flex;
     justify-content: space-between;
-    padding: 0 6em;
     font-weight: 200;
     opacity: 0.8;
   }

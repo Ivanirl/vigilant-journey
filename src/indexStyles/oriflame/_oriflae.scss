@@ -270,9 +270,11 @@ button {
       width: 13em;
       margin-bottom: 1.2em;
       img {
-        width: 100%;
+        width: 15em;
+        height: 20em;
+        object-fit: cover;
         border-radius: 10px;
-        box-shadow: 1px 4px 8px #8b8b8b;
+        box-shadow: 0px 1px 4px #b8b7b7;
       }
     }
     .bottom {
@@ -284,6 +286,7 @@ button {
         .left {
           display: flex;
           flex-direction: column;
+          justify-content: left;
           .big {
             font-size: 1.2em;
             font-weight: 100;
@@ -356,13 +359,16 @@ button {
   .showcase{
     display: flex;
     padding: 0 3em;
+    padding-bottom: 30em;
     .imgCont{
       position: relative;
+      width: 50em;
+      height: 25em;
       img{
         object-fit: cover;
         object-position: bottom 3;
-        width: 50em;
-        height: 40em;
+        width: 100%;
+        height: 100%;
       }
       button{
         @include signupbutton();
@@ -371,10 +377,15 @@ button {
         position: absolute;
         left: 35%;
         bottom: 8%;
+        &:hover{
+          box-shadow: 2px 2px 12px #c7c7c7;
+        }
       }
     }
     .products{
       display: flex;
+      margin-left: 1em;
+      gap: 1em;
     }
   }
 }

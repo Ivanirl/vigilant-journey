@@ -502,9 +502,12 @@ button {
   margin-bottom: 1.2em;
 }
 .CardA .smaller-box .top img {
-  width: 100%;
+  width: 15em;
+  height: 20em;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
-  box-shadow: 1px 4px 8px #8b8b8b;
+  box-shadow: 0px 1px 4px #b8b7b7;
 }
 .CardA .smaller-box .bottom {
   display: flex;
@@ -517,6 +520,7 @@ button {
 .CardA .smaller-box .bottom .one .left {
   display: flex;
   flex-direction: column;
+  justify-content: left;
 }
 .CardA .smaller-box .bottom .one .left .big {
   font-size: 1.2em;
@@ -621,17 +625,20 @@ button {
 .wnsection .showcase {
   display: flex;
   padding: 0 3em;
+  padding-bottom: 30em;
 }
 .wnsection .showcase .imgCont {
   position: relative;
+  width: 50em;
+  height: 25em;
 }
 .wnsection .showcase .imgCont img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: bottom 3;
      object-position: bottom 3;
-  width: 50em;
-  height: 40em;
+  width: 100%;
+  height: 100%;
 }
 .wnsection .showcase .imgCont button {
   color: #f8f8f8;
@@ -662,8 +669,13 @@ button {
   color: rgb(32, 32, 32);
   background: none;
 }
+.wnsection .showcase .imgCont button:hover {
+  box-shadow: 2px 2px 12px #c7c7c7;
+}
 .wnsection .showcase .products {
   display: flex;
+  margin-left: 1em;
+  gap: 1em;
 }
 
 @font-face {

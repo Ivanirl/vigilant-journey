@@ -80,8 +80,9 @@
     }
 
     &:focus {
-      opacity: 1;
+      opacity: 0.8;
       outline: none;
+      box-shadow: 2px 2px 7px #8f8f8f;
     }
   }
 
@@ -392,7 +393,6 @@ button {
 
   .thefirst{
     transform: rotate(45deg);
-    object-position: 20%;
   }
   .thesecond{
     display: none;

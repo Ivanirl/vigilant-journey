@@ -289,8 +289,9 @@ li {
   opacity: 0.8;
 }
 .Nav input:focus {
-  opacity: 1;
+  opacity: 0.8;
   outline: none;
+  box-shadow: 2px 2px 7px #8f8f8f;
 }
 .Nav .container {
   display: flex;
@@ -661,8 +662,6 @@ button {
 }
 .kross .thefirst {
   transform: rotate(45deg);
-  -o-object-position: 20%;
-     object-position: 20%;
 }
 .kross .thesecond {
   display: none;

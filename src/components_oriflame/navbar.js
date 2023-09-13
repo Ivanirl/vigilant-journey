@@ -31,6 +31,7 @@ function NavBar() {
               viewBox="0 0 51 18"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className={menuha ? "uncross" : "kross"}
             >
               <rect className="ops thefirst" width="32" height="2.5" rx="1.5" fill="#6e6e6e" />
               <rect className="ops thefirst" y="9" width="32" height="2.5" rx="1.5" fill="#6e6e6e" />

@@ -33,9 +33,9 @@ function NavBar() {
               xmlns="http://www.w3.org/2000/svg"
               className={menuha ? "kross" : "unkross"}
             >
-              <rect className="ops thefirst" width="32" height="2.5" rx="1.5" fill="#6e6e6e" />
+              <rect className="ops thefirst" width="32" y={menuha? "-5":""} x={ menuha ? "3": ""}height="2.5" rx="1.5" fill="#6e6e6e" />
               <rect className="ops thesecond" y="9" width="32" height="2.5" rx="1.5" fill="#6e6e6e" />
-              <rect className="ops thethird" y="17" width="32" height="2.5" rx="1.5" fill="#6e6e6e" />
+              <rect className="ops thethird" y={menuha? "19":"17"} x={ menuha ? "-11": ""} width="32" height="2.5" rx="1.5" fill="#6e6e6e" />
             </svg>
           </button>
 
@@ -48,7 +48,7 @@ function NavBar() {
             <div className="seperator"></div>
             <input placeholder="Search"></input>
           </div>
-          <ul className={menuha ? "navigation" : "closedNav"} id="nav-bubble">
+          <ul className="closedNav" id="nav-bubble">
             <li className="bubble-close">
               <button
                 className="womens"

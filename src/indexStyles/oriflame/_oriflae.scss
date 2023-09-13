@@ -225,7 +225,7 @@ button {
 
 .BigCaro {
   position: relative;
-  height: fit-content;
+  max-height: min-content;
   img {
     width: 100%;
   }

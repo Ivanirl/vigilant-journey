@@ -437,8 +437,8 @@ button {
 
 .BigCaro {
   position: relative;
-  height: -moz-fit-content;
-  height: fit-content;
+  max-height: -moz-min-content;
+  max-height: min-content;
 }
 .BigCaro img {
   width: 100%;

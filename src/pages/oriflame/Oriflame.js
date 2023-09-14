@@ -5,6 +5,7 @@ import Banner from "../../components_oriflame/Banner";
 import Carousel from "../../components_oriflame/Carousel";
 import LinkBar from "../../components_oriflame/Category_links";
 import CardA from "../../components_oriflame/productcardA";
+import Split from "../../components_oriflame/SplitBanner";
 
 export default function () {
   return (
@@ -49,6 +50,9 @@ export default function () {
               <button>SHOP NOW</button>
             </div>
           </div>
+        </section>
+        <section className=" wnsection split">
+          <Split />
         </section>
       </div>
     </div>

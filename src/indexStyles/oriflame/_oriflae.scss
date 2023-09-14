@@ -418,7 +418,6 @@ button {
   .showcase{
     display: flex;
     gap: 1.5em;
-    padding-bottom: 30em;
     .imgCont{
       position: relative;
       width: 33em;
@@ -461,5 +460,53 @@ button {
   }
   .thethird{
     transform: rotate(-45deg);
+  }
+}
+
+.BigSplit{
+  display: flex;
+  padding: 4em 0 14em;
+  position: relative;
+  overflow: hidden;
+
+  .bgcircle{
+    z-index: 1;
+    position: absolute;
+    bottom: 6em;
+    left: -15em;
+    opacity: 0.3;
+    width: 30em;
+    height: 30em;
+    border-radius: 50%;
+    background: #8d9ba8;
+  }
+  img{
+    object-fit: cover;
+    object-position: top;
+    width: 55em;
+    height: 30em;
+    z-index: 90099999;
+  }
+
+  .RightBoy{
+    background: #ebebeb;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 5em 0 0 5em;
+
+    h1{
+      text-align: left;
+      font-size: 2.7em;
+      span{
+        text-align: left;
+        display: block
+      }
+    }
+
+    button{
+      @include baton();
+    }
   }
 }

@@ -662,7 +662,10 @@ button {
 }
 
 .horsy {
-  margin-top: 9em;
+  margin-top: 0;
+  padding-top: 9em;
+  position: relative;
+  overflow: hidden;
 }
 .horsy .header button {
   width: -moz-fit-content;
@@ -690,8 +693,13 @@ button {
   background: none;
 }
 .horsy .bgcircle {
-  width: 80px;
-  height: 80px;
+  position: absolute;
+  top: 5em;
+  right: -4em;
+  opacity: 0.3;
+  width: 30em;
+  height: 30em;
+  border-radius: 50%;
   background: #8d9ba8;
 }
 .horsy .showcase {

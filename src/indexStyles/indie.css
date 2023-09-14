@@ -705,7 +705,6 @@ button {
 .horsy .showcase {
   display: flex;
   gap: 1.5em;
-  padding-bottom: 30em;
 }
 .horsy .showcase .imgCont {
   position: relative;
@@ -770,6 +769,71 @@ button {
 }
 .kross .thethird {
   transform: rotate(-45deg);
+}
+
+.BigSplit {
+  display: flex;
+  padding: 4em 0 14em;
+  position: relative;
+  overflow: hidden;
+}
+.BigSplit .bgcircle {
+  z-index: 1;
+  position: absolute;
+  bottom: 6em;
+  left: -15em;
+  opacity: 0.3;
+  width: 30em;
+  height: 30em;
+  border-radius: 50%;
+  background: #8d9ba8;
+}
+.BigSplit img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  width: 55em;
+  height: 30em;
+  z-index: 90099999;
+}
+.BigSplit .RightBoy {
+  background: #ebebeb;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 5em 0 0 5em;
+}
+.BigSplit .RightBoy h1 {
+  text-align: left;
+  font-size: 2.7em;
+}
+.BigSplit .RightBoy h1 span {
+  text-align: left;
+  display: block;
+}
+.BigSplit .RightBoy button {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: bold;
+  padding: 0.9em 2.1em;
+  font-size: 1em;
+  border: solid rgb(91, 92, 92) 1.8px;
+  background: none;
+  border-radius: 23px;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+.BigSplit .RightBoy button:hover {
+  opacity: 1;
+  color: black;
+  background: rgb(222, 225, 228);
+}
+.BigSplit .RightBoy button:active {
+  opacity: 1;
+  color: white;
+  background: none;
 }
 
 @font-face {

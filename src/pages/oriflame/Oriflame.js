@@ -31,6 +31,25 @@ export default function () {
             </div>
           </div>
         </section>
+        <section className="wnsection horsy">
+          <div className="bgcircle"></div>
+        <div className="header">
+            <h1>Best Offers</h1>
+            <button>VIEW OFFER</button>
+          </div>
+          <div className="showcase">
+            <div className="products">
+              <CardA />
+              <CardA />
+              <CardA />
+              <CardA />
+            </div>
+            <div className="imgCont">
+              <img src={head} />
+              <button>SHOP NOW</button>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );

@@ -4,7 +4,21 @@ import Logo from "../Resources/Oriflame_logo.png";
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
+  const [scrolled, setScrolled] = useState(false);
   const [menuha, setMenuha] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 1000) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
@@ -16,7 +30,7 @@ function NavBar() {
   };
 
   return (
-    <div className="Nav">
+    <div className="Nav" id={scrolled ? "scrollo" : ""}>
       <div className="container">
         <div className="rightboy">
           <button

@@ -777,14 +777,13 @@ button {
 
 .BigSplit {
   display: flex;
-  padding: 4em 0 14em;
+  padding: 4em 0 4em;
   position: relative;
-  overflow: hidden;
 }
 .BigSplit .bgcircle {
   z-index: 1;
   position: absolute;
-  bottom: 6em;
+  bottom: -6em;
   left: -15em;
   opacity: 0.3;
   width: 30em;
@@ -799,7 +798,7 @@ button {
      object-position: top;
   width: 55em;
   height: 30em;
-  z-index: 90099999;
+  z-index: 900;
 }
 .BigSplit .RightBoy {
   background: #ebebeb;
@@ -840,8 +839,19 @@ button {
   background: none;
 }
 
+.Bb .header {
+  margin-bottom: 3em;
+}
+.Bb .header h1 {
+  margin-bottom: 0.5em;
+  font-size: 3em;
+}
 .Bb .header span {
-  font-size: 5.1em;
+  color: #6d6d6d;
+  font-size: 1.1em;
+}
+.Bb .header button {
+  top: 3em;
 }
 
 @font-face {

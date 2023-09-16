@@ -1,4 +1,4 @@
-import head from "../../Resources/Head.JPG"
+import head from "../../Resources/Head.JPG";
 
 import NavBar from "../../components_oriflame/navbar";
 import Banner from "../../components_oriflame/Banner";
@@ -34,7 +34,7 @@ export default function () {
         </section>
         <section className="wnsection horsy">
           <div className="bgcircle"></div>
-        <div className="header">
+          <div className="header">
             <h1>Best Offers</h1>
             <button>VIEW OFFER</button>
           </div>
@@ -58,7 +58,12 @@ export default function () {
           <div className="header">
             <h1>What's new</h1>
             <button>VIEW ALL</button>
-            <span>nff wdkjnflwm fkmlkd e e imefpw  lkfw wkflwk fwifw fwjnfwnf wjnf dff ondo eoknmkq dqkne wfnw fooo dowfnqkdqwdffwf  wknfw.</span>
+            <span>
+              Body care means taking care of your body from head to toe and
+              plays an important role when you <br></br>will feel clean, refreshed,
+              healthy and pampered. We offer a comprehensive range of products
+              for <br></br>feet, oral hygiene and body, to meet your daily needs.
+            </span>
           </div>
           <div className="showcase">
             <div className="imgCont">
@@ -66,8 +71,6 @@ export default function () {
               <button>GET STARTED</button>
             </div>
             <div className="products">
-              <CardA />
-              <CardA />
               <CardA />
             </div>
           </div>

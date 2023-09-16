@@ -375,6 +375,10 @@ li {
   display: none;
 }
 
+#scrollo {
+  box-shadow: 1px 1px 1px #e7e7e7;
+}
+
 button {
   background: none;
   border: none;
@@ -836,6 +840,10 @@ button {
   background: none;
 }
 
+.Bb .header span {
+  font-size: 5.1em;
+}
+
 @font-face {
   font-family: Centra;
   src: url(../Resources/font/CentraNo2-Bold.ttf);
@@ -1264,10 +1272,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#scrollo {
-  background: pink;
 }
 
 .Browse {

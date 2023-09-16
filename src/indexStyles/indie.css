@@ -854,6 +854,12 @@ button {
   top: 3em;
 }
 
+.Be .showcase {
+  display: flex;
+  gap: 3em;
+  justify-content: center;
+}
+
 @font-face {
   font-family: Centra;
   src: url(../Resources/font/CentraNo2-Bold.ttf);

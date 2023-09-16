@@ -6,6 +6,7 @@ import Carousel from "../../components_oriflame/Carousel";
 import LinkBar from "../../components_oriflame/Category_links";
 import CardA from "../../components_oriflame/productcardA";
 import Split from "../../components_oriflame/SplitBanner";
+import News from "../../components_oriflame/ArticleThumbnail";
 
 export default function () {
   return (
@@ -60,9 +61,10 @@ export default function () {
             <button>VIEW ALL</button>
             <span>
               Body care means taking care of your body from head to toe and
-              plays an important role when you <br></br>will feel clean, refreshed,
-              healthy and pampered. We offer a comprehensive range of products
-              for <br></br>feet, oral hygiene and body, to meet your daily needs.
+              plays an important role when you <br></br>will feel clean,
+              refreshed, healthy and pampered. We offer a comprehensive range of
+              products for <br></br>feet, oral hygiene and body, to meet your
+              daily needs.
             </span>
           </div>
           <div className="showcase">
@@ -80,20 +82,14 @@ export default function () {
             <h1>What's new</h1>
             <button>VIEW ALL</button>
             <span>
-              Body care means taking care of your body from head to toe and
-              plays an important role when you <br></br>will feel clean, refreshed,
-              healthy and pampered. We offer a comprehensive range of products
-              for <br></br>feet, oral hygiene and body, to meet your daily needs.
+              We believe beauty is not only products, but inspiration and
+              growth. This is where we share <br></br>facts, tips and how to's to
+              boost your confidence and help you stay on top of trends.
             </span>
           </div>
           <div className="showcase">
-            <div className="imgCont">
-              <img src={head} />
-              <button>GET STARTED</button>
-            </div>
-            <div className="products">
-              <CardA />
-            </div>
+            <News />
+            <News />
           </div>
         </section>
       </div>

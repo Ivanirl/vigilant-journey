@@ -54,6 +54,24 @@ export default function () {
         <section className=" wnsection split">
           <Split />
         </section>
+        <section className="wnsection Bb">
+          <div className="header">
+            <h1>What's new</h1>
+            <button>VIEW ALL</button>
+            <span>nff wdkjnflwm fkmlkd e e imefpw  lkfw wkflwk fwifw fwjnfwnf wjnf dff ondo eoknmkq dqkne wfnw fooo dowfnqkdqwdffwf  wknfw.</span>
+          </div>
+          <div className="showcase">
+            <div className="imgCont">
+              <img src={head} />
+              <button>GET STARTED</button>
+            </div>
+            <div className="products">
+              <CardA />
+              <CardA />
+              <CardA />
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );

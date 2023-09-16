@@ -162,6 +162,10 @@
   }
 }
 
+#scrollo{
+  box-shadow: 1px 1px 1px #e7e7e7;
+}
+
 button {
   background: none;
   border: none;
@@ -507,6 +511,14 @@ button {
 
     button{
       @include baton();
+    }
+  }
+}
+
+.Bb{
+  .header{
+    span{
+      font-size: 5.1em;
     }
   }
 }

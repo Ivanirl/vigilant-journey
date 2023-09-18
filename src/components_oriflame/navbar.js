@@ -1,11 +1,18 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Logo from "../Resources/Oriflame_logo.png";
+import { Modal } from "react-overlays";
+import { motion } from "framer-motion";
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
   const [menuha, setMenuha] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+
+  const handleClose = ()=>setShowModal(false);
+  const handleSave = ()=>{console.log("success")}
+  const renderBackdrop =(props)=><div className={props}></div>
 
   useEffect(() => {
     const onScroll = () => {
@@ -37,6 +44,7 @@ function NavBar() {
             className="mens"
             onClick={() => {
               setMenuha(!menuha);
+              setShowModal(!showModal)
             }}
           >
             <svg
@@ -47,9 +55,32 @@ function NavBar() {
               xmlns="http://www.w3.org/2000/svg"
               className={menuha ? "kross" : "unkross"}
             >
-              <rect className="ops thefirst" width="32" y={menuha? "-5":""} x={ menuha ? "3": ""}height="2.5" rx="1.5" fill="#6e6e6e" />
-              <rect className="ops thesecond" y="9" width="32" height="2.5" rx="1.5" fill="#6e6e6e" />
-              <rect className="ops thethird" y={menuha? "19":"17"} x={ menuha ? "-11": ""} width="32" height="2.5" rx="1.5" fill="#6e6e6e" />
+              <rect
+                className="ops thefirst"
+                width="32"
+                y={menuha ? "-5" : ""}
+                x={menuha ? "3" : ""}
+                height="2.5"
+                rx="1.5"
+                fill="#6e6e6e"
+              />
+              <rect
+                className="ops thesecond"
+                y="9"
+                width="32"
+                height="2.5"
+                rx="1.5"
+                fill="#6e6e6e"
+              />
+              <rect
+                className="ops thethird"
+                y={menuha ? "19" : "17"}
+                x={menuha ? "-11" : ""}
+                width="32"
+                height="2.5"
+                rx="1.5"
+                fill="#6e6e6e"
+              />
             </svg>
           </button>
 
@@ -140,6 +171,19 @@ function NavBar() {
           </ul>
         </div>
       </div>
+      <Modal
+        className="modal"
+        show={showModal}
+        onHide={handleClose}
+        renderBackdrop={renderBackdrop}
+      >
+              <motion.div
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.7, ease: [0.6, -0.05, 0.01, 0.99] }}
+        className="smaller-box"
+      ><h1>PUSSIO</h1></motion.div>
+      </Modal>
     </div>
   );
 }

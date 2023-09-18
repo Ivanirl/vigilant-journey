@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+.anymatch-nHz7J0jT
 
 # testing
 /coverage

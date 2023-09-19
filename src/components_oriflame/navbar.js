@@ -10,9 +10,11 @@ function NavBar() {
   const [menuha, setMenuha] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
-  const handleClose = ()=>setShowModal(false);
-  const handleSave = ()=>{console.log("success")}
-  const renderBackdrop =(props)=><div className={props}></div>
+  const handleClose = () => setShowModal(false);
+  const handleSave = () => {
+    console.log("success");
+  };
+  const renderBackdrop = (props) => <div className={props}></div>;
 
   useEffect(() => {
     const onScroll = () => {
@@ -44,7 +46,7 @@ function NavBar() {
             className="mens"
             onClick={() => {
               setMenuha(!menuha);
-              setShowModal(!showModal)
+              setShowModal(!showModal);
             }}
           >
             <svg
@@ -177,12 +179,33 @@ function NavBar() {
         onHide={handleClose}
         renderBackdrop={renderBackdrop}
       >
-              <motion.div
-        initial={{ y: -20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.7, ease: [0.6, -0.05, 0.01, 0.99] }}
-        className="smaller-box"
-      ><h1>PUSSIO</h1></motion.div>
+        <motion.div
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.7, ease: [0.6, -0.05, 0.01, 0.99] }}
+          className="smaller-box"
+        >
+         <section className="leftSlim">
+          <div>
+            <ul>
+              <li>
+                <div className="bar"></div>
+                <span>Beauty Routines</span>
+              </li>
+              <li>
+                <div className="bar"></div>
+                <span>eCatalogue</span>
+              </li>
+              <li>
+                <div className="bar"></div>
+                <span>Local Inspiration</span>
+              </li>
+
+            </ul>
+          </div>
+         </section>
+         <section className="pseudoLoad"></section> 
+        </motion.div>
       </Modal>
     </div>
   );

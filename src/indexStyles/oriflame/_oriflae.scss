@@ -547,6 +547,10 @@ button {
   background: #f5f5f5;
   color: #383838;
   padding: 11em;
+  display: flex;
+  .smaller-box{
+    display: flex;
+  }
 }
 
 .Footsy{

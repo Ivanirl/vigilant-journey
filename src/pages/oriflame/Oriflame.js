@@ -7,6 +7,7 @@ import LinkBar from "../../components_oriflame/Category_links";
 import CardA from "../../components_oriflame/productcardA";
 import Split from "../../components_oriflame/SplitBanner";
 import News from "../../components_oriflame/ArticleThumbnail";
+import Footer from "../../components_oriflame/Footer";
 
 export default function () {
   return (
@@ -93,6 +94,7 @@ export default function () {
           </div>
         </section>
       </div>
+      <Footer />
     </div>
   );
 }

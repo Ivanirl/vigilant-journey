@@ -247,11 +247,10 @@ function NavBar() {
                 </li>
               </ul>
             </div>
-            <div className="right">
-                <Nothing />
-            </div>
           </section>
-          <section className="pseudoLoad"></section>
+          <section className="pseudoLoad">
+            <Nothing />
+          </section>
         </motion.div>
       </Modal>
     </div>

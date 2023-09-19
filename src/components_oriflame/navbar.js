@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Logo from "../Resources/Oriflame_logo.png";
 import { Modal } from "react-overlays";
 import { motion } from "framer-motion";
+import Nothing from "../components/empty";
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
@@ -186,7 +187,7 @@ function NavBar() {
           className="smaller-box"
         >
           <section className="leftSlim">
-            <div>
+            <div className="left">
               <ul>
                 <li>
                   <div className="bar"></div>
@@ -245,6 +246,9 @@ function NavBar() {
                   <span>Sample Shop</span>
                 </li>
               </ul>
+            </div>
+            <div className="right">
+                <Nothing />
             </div>
           </section>
           <section className="pseudoLoad"></section>

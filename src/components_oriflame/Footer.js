@@ -31,6 +31,25 @@ export default function Footer() {
           </ul>
         </div>
       </motion.div>
+      <motion.div
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.7, ease: [0.6, -0.05, 0.01, 0.99] }}
+        className="container"
+      >
+        <div className="float">
+          <span>
+            Oriflame is a leading beauty company selling direct. We are present
+            in more than 60 countries, of which we are the market leader in more
+            than half. Oriflame has its origin in Sweeden with corporate offices
+            in Switzerland. We offer a wide range of high-quality beauty
+            products as well as a unique opportunity to join our sales force and
+            start your own business.
+          </span>
+          <span>Copyright 2023 Oriflame Cosmetics Global SA. All rights reserved.</span>
+          <span>Select Country</span>
+        </div>
+      </motion.div>
     </div>
   );
 }

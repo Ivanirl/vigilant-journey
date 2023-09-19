@@ -14,7 +14,7 @@ function NavBar() {
   const handleSave = () => {
     console.log("success");
   };
-  const renderBackdrop = (props) => <div className={props}></div>;
+  const renderBackdrop = (props) => <div className="props"></div>;
 
   useEffect(() => {
     const onScroll = () => {
@@ -185,26 +185,69 @@ function NavBar() {
           transition={{ duration: 0.7, ease: [0.6, -0.05, 0.01, 0.99] }}
           className="smaller-box"
         >
-         <section className="leftSlim">
-          <div>
-            <ul>
-              <li>
-                <div className="bar"></div>
-                <span>Beauty Routines</span>
-              </li>
-              <li>
-                <div className="bar"></div>
-                <span>eCatalogue</span>
-              </li>
-              <li>
-                <div className="bar"></div>
-                <span>Local Inspiration</span>
-              </li>
-
-            </ul>
-          </div>
-         </section>
-         <section className="pseudoLoad"></section> 
+          <section className="leftSlim">
+            <div>
+              <ul>
+                <li>
+                  <div className="bar"></div>
+                  <span>Beauty Routines</span>
+                </li>
+                <li>
+                  <div className="bar"></div>
+                  <span>eCatalogue</span>
+                </li>
+                <li>
+                  <div className="bar"></div>
+                  <span>Local Inspiration</span>
+                </li>
+                <li>
+                  <div className="bar"></div>
+                  <span>Nutrition</span>
+                </li>
+                <li className="skyblue">
+                  <div className="bar "></div>
+                  <span>Skin Care</span>
+                </li>
+                <li className="lightpink">
+                  <div className="bar"></div>
+                  <span>Make-Up</span>
+                </li>
+                <li className="ashy">
+                  <div className="bar"></div>
+                  <span>Fragrance</span>
+                </li>
+                <li className="darkblue">
+                  <div className="bar"></div>
+                  <span>Bath and Body</span>
+                </li>
+                <li className="yellow">
+                  <div className="bar"></div>
+                  <span>Hair</span>
+                </li>
+                <li className="purple">
+                  <div className="bar"></div>
+                  <span>Wellness</span>
+                </li>
+                <li className="darkgreen">
+                  <div className="bar"></div>
+                  <span>Men</span>
+                </li>
+                <li className="lightblue">
+                  <div className="bar"></div>
+                  <span>Kids and Baby</span>
+                </li>
+                <li>
+                  <div className="bar"></div>
+                  <span>New Products</span>
+                </li>
+                <li>
+                  <div className="bar"></div>
+                  <span>Sample Shop</span>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section className="pseudoLoad"></section>
         </motion.div>
       </Modal>
     </div>

@@ -546,10 +546,33 @@ button {
   height: 100%;
   background: #f5f5f5;
   color: #383838;
-  padding: 11em;
- // display: flex;
+  padding: 5em;
+  padding-left: 0;
+
   .smaller-box{
+    height: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .leftSlim{
+      height: 100%;
+      .left{
+        height: 100%;
+        ul{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          border-right: solid #6d6d6d 2px;
+          padding: 5px 0;
+          gap: 5px;
+          font-size: 0.9em;
+
+          li{
+            padding: 10px 3em;
+          }
+        }
+      }
+    }
   }
 }
 

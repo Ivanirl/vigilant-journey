@@ -7,52 +7,52 @@ export default function LinkBar(){
                 <ul>
                     <li>
                         <Link to="/oriflame">
-                            <span>ECATALOGUE</span>
+                            <span className="linky">ECATALOGUE</span>
                         </Link>
                     </li>
                     <li>
                         <Link to="/oriflame">
-                            <span>NUTRITION</span>
+                            <span className="linky">NUTRITION</span>
                         </Link>
                     </li>
                     <li>
                         <Link to="/oriflame">
-                            <span>SKIN CARE</span>
+                            <span className="linky">SKIN CARE</span>
                         </Link>
                     </li>
                     <li>
                         <Link to="/oriflame">
-                            <span>MAKE-UP</span>
+                            <span className="linky">MAKE-UP</span>
                         </Link>
                     </li>
                     <li>
                         <Link to="/oriflame">
-                            <span>FRAGRANCE</span>
+                            <span className="linky">FRAGRANCE</span>
                         </Link>
                     </li>
                     <li>
                         <Link to="/oriflame">
-                            <span>BATH & BODY</span>
+                            <span className="linky">BATH & BODY</span>
                         </Link>
                     </li>
                     <li>
                         <Link to="/oriflame">
-                            <span>HAIR</span>
+                            <span className="linky">HAIR</span>
                         </Link>
                     </li>
                     <li>
                         <Link to="/oriflame">
-                            <span>WELLNESS</span>
+                            <span className="linky">WELLNESS</span>
                         </Link>
                     </li>
                     <li>
                         <Link to="/oriflame">
-                            <span>MEN</span>
+                            <span className="linky">MEN</span>
                         </Link>
                     </li>
                     <li>
                         <Link to="/oriflame">
-                            <span>KIDS & BABY</span>
+                            <span className="linky">KIDS & BABY</span>
                         </Link>
                     </li>
                 </ul>

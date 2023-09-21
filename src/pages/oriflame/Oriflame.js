@@ -1,5 +1,5 @@
 import head from "../../Resources/Head.JPG";
-import beauty from "../../Resources/BeautyBeauty.png"
+import beauty from "../../Resources/BeautyBeauty.png";
 
 import NavBar from "../../components_oriflame/navbar";
 import Banner from "../../components_oriflame/Banner";
@@ -12,10 +12,8 @@ import Footer from "../../components_oriflame/Footer";
 
 import { useState, useEffect } from "react";
 
-
 export default function () {
   const [scrolled, setScrolled] = useState(false);
-
 
   useEffect(() => {
     const onScroll = () => {
@@ -30,10 +28,36 @@ export default function () {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-
   return (
     <div>
-      <div className={scrolled? "showgreen" : "noshow"}></div>
+      <div className={scrolled ? "showgreen" : "noshow"}>
+        <svg
+          width="49"
+          height="37"
+          viewBox="0 0 49 37"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            y="4"
+            x="14.01123"
+            width="40"
+            height="3"
+            rx="1.5"
+            transform="rotate(42.0982 8.01123 0)"
+            fill="#f5f5f5"
+          />
+          <rect
+            x="6.22681"
+            y="34.8887"
+            width="40"
+            height="3"
+            rx="1.5"
+            transform="rotate(-45.3915 6.22681 34.8887)"
+            fill="#f5f5f5"
+          />
+        </svg>
+      </div>
       <NavBar />
       <div className="oho">
         <Banner />
@@ -102,12 +126,12 @@ export default function () {
         </section>
         <section className="wnsection Bb Be">
           <div className="header">
-            <img alt="central" src={beauty}/>
+            <img alt="central" src={beauty} />
             <button>VIEW ALL</button>
             <span>
               We believe beauty is not only products, but inspiration and
-              growth. This is where we share <br></br>facts, tips and how to's to
-              boost your confidence and help you stay on top of trends.
+              growth. This is where we share <br></br>facts, tips and how to's
+              to boost your confidence and help you stay on top of trends.
             </span>
           </div>
           <div className="showcase">

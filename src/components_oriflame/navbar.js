@@ -40,7 +40,7 @@ function NavBar() {
   };
 
   return (
-    <div className="Nav" id={scrolled ? "scrollo" : ""}>
+    <div className={showModal? "scrollo":"Nav"} id={scrolled ? "scrollo" : ""}>
       <div className="container">
         <div className="rightboy">
           <button

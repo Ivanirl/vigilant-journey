@@ -9,9 +9,30 @@ import Split from "../../components_oriflame/SplitBanner";
 import News from "../../components_oriflame/ArticleThumbnail";
 import Footer from "../../components_oriflame/Footer";
 
+import { useState, useEffect } from "react";
+
+
 export default function () {
+  const [scrolled, setScrolled] = useState(false);
+
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 550) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+
   return (
     <div>
+      <div className={scrolled? "showgreen" : "noshow"}></div>
       <NavBar />
       <div className="oho">
         <Banner />

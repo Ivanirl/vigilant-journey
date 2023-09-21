@@ -165,6 +165,9 @@
 #scrollo{
   box-shadow: 1px 1px 1px #e7e7e7;
 }
+.scrollo{
+  box-shadow: 1px 1px 1px #e7e7e7;
+}
 
 button {
   background: none;
@@ -225,6 +228,18 @@ button {
 
 .noshow {
   display: none;
+}
+
+.showgreen{
+  z-index: 1000000000000000000000;
+  display: block;
+  position: fixed;
+  right: 3em;
+  bottom: 3em;
+  background-color: rgb(1, 145, 145);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
 
 .BigCaro {
@@ -565,11 +580,17 @@ button {
           justify-content: space-between;
           border-right: solid #6d6d6d 2px;
           padding: 5px 0;
-          gap: 5px;
-          font-size: 0.9em;
+          padding-bottom: 2em;
+          gap: 2px;
+          font-size: 1.2em;
 
           li{
-            padding: 10px 3em;
+            cursor: pointer;
+            padding: 8px 3em;
+            text-align: left;
+            &:hover{
+              background: #b8b7b7;
+            }
           }
         }
       }
@@ -630,8 +651,22 @@ li{
   .containerB{
     background: #ffffff;
     padding-top: 2em;
-    padding-bottom: 18em;
-    color: #6d6d6d;
+    padding-bottom: 9em;
+    .float{
+      padding-top: 1em;
+      .topDawg{
+        margin-bottom: 2.3em;
+      }
+      span{
+        color: #8a8a8a;
+        display: block;
+        line-height: 1.5em;
+        margin-top: 0.9em;
+      }
 
+      .u{
+        text-decoration: underline;
+      }
+    }
   }
 }

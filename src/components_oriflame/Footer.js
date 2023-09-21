@@ -38,16 +38,16 @@ export default function Footer() {
         className="containerB"
       >
         <div className="float">
-          <span>
+          <span className="topDawg">
             Oriflame is a leading beauty company selling direct. We are present
-            in more than 60 countries, of which we are the market leader in more
-            than half. Oriflame has its origin in Sweeden with corporate offices
-            in Switzerland. We offer a wide range of high-quality beauty
+            in more than 60 countries, of which we are the<br></br> market leader in more
+            than half. Oriflame has its origin in Sweden with corporate offices
+            in Switzerland. We offer a<br></br> wide range of high-quality beauty
             products as well as a unique opportunity to join our sales force and
-            start your own business.
+            start your<br></br> own business.
           </span>
           <span>Copyright 2023 Oriflame Cosmetics Global SA. All rights reserved.</span>
-          <span>Select Country</span>
+          <span className="u">Select Country</span>
         </div>
       </motion.div>
     </div>

@@ -572,7 +572,11 @@ button {
   padding-bottom: 7em;
 
   .header{
+    display: block;
     .img{
+      display: block;
+    }
+    span{
       display: block;
     }
   }

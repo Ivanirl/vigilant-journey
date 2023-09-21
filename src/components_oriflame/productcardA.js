@@ -1,4 +1,4 @@
-import Cardinho from "../Resources/IMG_7026.jpg";
+import Cardinho from "../Resources/productimage.png";
 import { motion } from "framer-motion";
 
 export default function CardA() {
@@ -16,11 +16,11 @@ export default function CardA() {
         <div className="bottom">
           <div className="one">
             <div className="left">
-              <span className="big">JORDAN</span>
-              <span className="small">Retro Low OG SP</span>
+              <span className="big">MILK AND HONEY GOLD</span>
+              <span className="small">Cleansing Cream Calendula</span>
             </div>
             <div className="right">
-              <span>$1,283</span>
+              <span>$270</span>
             </div>
           </div>
           <div className="two">

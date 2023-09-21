@@ -1,4 +1,5 @@
 import head from "../../Resources/Head.JPG";
+import beauty from "../../Resources/BeautyBeauty.png"
 
 import NavBar from "../../components_oriflame/navbar";
 import Banner from "../../components_oriflame/Banner";
@@ -79,7 +80,7 @@ export default function () {
         </section>
         <section className="wnsection Bb">
           <div className="header">
-            <h1>What's new</h1>
+            <h1>Bath & Body</h1>
             <button>VIEW ALL</button>
             <span>
               Body care means taking care of your body from head to toe and
@@ -101,7 +102,7 @@ export default function () {
         </section>
         <section className="wnsection Bb Be">
           <div className="header">
-            <h1>What's new</h1>
+            <img alt="central" src={beauty}/>
             <button>VIEW ALL</button>
             <span>
               We believe beauty is not only products, but inspiration and

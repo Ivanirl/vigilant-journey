@@ -4,6 +4,7 @@ import Logo from "../Resources/Oriflame_logo.png";
 import { Modal } from "react-overlays";
 import { motion } from "framer-motion";
 import Nothing from "../components/empty";
+import Bag from "../Resources/ShopBag2.png";
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
@@ -40,7 +41,7 @@ function NavBar() {
   };
 
   return (
-    <div className={showModal? "scrollo":"Nav"} id={scrolled ? "scrollo" : ""}>
+    <div className={showModal? "scrollo Nav":"Nav"} id={scrolled ? "scrollo" : ""}>
       <div className="container">
         <div className="rightboy">
           <button
@@ -168,7 +169,7 @@ function NavBar() {
                   }
                 }}
               >
-                <span>Icon</span>
+                <img className="bag" alt="bag" src={Bag}/>
               </Link>
             </li>
           </ul>
@@ -205,35 +206,35 @@ function NavBar() {
                   <div className="bar"></div>
                   <span>Nutrition</span>
                 </li>
-                <li className="skyblue">
-                  <div className="bar "></div>
+                <li className="colored skyblue">
+                  <div className="bar"></div>
                   <span>Skin Care</span>
                 </li>
-                <li className="lightpink">
+                <li className="colored lightpink">
                   <div className="bar"></div>
                   <span>Make-Up</span>
                 </li>
-                <li className="ashy">
+                <li className="colored ashy">
                   <div className="bar"></div>
                   <span>Fragrance</span>
                 </li>
-                <li className="darkblue">
+                <li className="colored darkblue">
                   <div className="bar"></div>
                   <span>Bath and Body</span>
                 </li>
-                <li className="yellow">
+                <li className="colored yellow">
                   <div className="bar"></div>
                   <span>Hair</span>
                 </li>
-                <li className="purple">
+                <li className="colored purple">
                   <div className="bar"></div>
                   <span>Wellness</span>
                 </li>
-                <li className="darkgreen">
+                <li className="colored darkgreen">
                   <div className="bar"></div>
                   <span>Men</span>
                 </li>
-                <li className="lightblue">
+                <li className="colored lightblue">
                   <div className="bar"></div>
                   <span>Kids and Baby</span>
                 </li>

@@ -532,6 +532,7 @@ button {
 }
 
 .Be{
+  padding-bottom: 7em;
   .showcase{
     display: flex;
     gap: 3em;
@@ -579,42 +580,58 @@ button {
 .Footsy{
   // position: absolute;
   // bottom: 0;
-  background-color: rgb(22, 22, 22);
-  width: 100%;
-  padding: 1.7em 3em;
+ // padding-bottom: 19em;
+  padding-top: 10px;
+
   *{
-      color: rgb(219, 219, 219);
+    color: rgb(219, 219, 219);
   }
   
 li{
   cursor: pointer;
 }
 
-  .container{
+  .containerT{
       display: flex;
-      justify-content: space-between;
-      .left{
-          display: flex;
-          flex-direction: column;
+      justify-content: center;
+      padding: 1.7em 3em;
+      //background-color: green;
+      width: 100%;
 
-      }
       .right{
           display: flex;
-          gap: 1em;
+          justify-content: center;
+          gap: 6em;
           ul{
+            //background: yellow;
               display: flex;
               flex-direction: column;
-              align-items: left;
-              gap: 4px;
+              justify-content: left;
+              text-align: left;
+              gap: 1.1em;
+              padding: 1em;
               span{
-                  font-size: 1.1em;
-                  font-weight: 100;
+                color: #6d6d6d;
+                  font-size: 1.3em;
+                  font-weight: 200;
                   margin-bottom: 5px;
+                  text-align: left;
+                  margin-bottom: 10px;
               }
               li{
-                  font-size: 0.9em;
+                  font-size: 1em;
+                  text-align: left;
+                  color: #6d6d6d;
               }
           }
       }
+  }
+
+  .containerB{
+    background: #ffffff;
+    padding-top: 2em;
+    padding-bottom: 18em;
+    color: #6d6d6d;
+
   }
 }

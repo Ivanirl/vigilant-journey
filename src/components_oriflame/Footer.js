@@ -7,7 +7,7 @@ export default function Footer() {
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, ease: [0.6, -0.05, 0.01, 0.99] }}
-        className="container"
+        className="containerT"
       >
         <div className="right">
           <ul className="vought1">
@@ -35,7 +35,7 @@ export default function Footer() {
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, ease: [0.6, -0.05, 0.01, 0.99] }}
-        className="container"
+        className="containerB"
       >
         <div className="float">
           <span>

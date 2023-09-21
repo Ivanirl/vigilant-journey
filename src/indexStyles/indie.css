@@ -854,6 +854,9 @@ button {
   top: 3em;
 }
 
+.Be {
+  padding-bottom: 7em;
+}
 .Be .showcase {
   display: flex;
   gap: 3em;
@@ -896,9 +899,7 @@ button {
 }
 
 .Footsy {
-  background-color: rgb(22, 22, 22);
-  width: 100%;
-  padding: 1.7em 3em;
+  padding-top: 10px;
 }
 .Footsy * {
   color: rgb(219, 219, 219);
@@ -906,31 +907,43 @@ button {
 .Footsy li {
   cursor: pointer;
 }
-.Footsy .container {
+.Footsy .containerT {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  padding: 1.7em 3em;
+  width: 100%;
 }
-.Footsy .container .left {
+.Footsy .containerT .right {
+  display: flex;
+  justify-content: center;
+  gap: 6em;
+}
+.Footsy .containerT .right ul {
   display: flex;
   flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  gap: 1.1em;
+  padding: 1em;
 }
-.Footsy .container .right {
-  display: flex;
-  gap: 1em;
-}
-.Footsy .container .right ul {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  gap: 4px;
-}
-.Footsy .container .right ul span {
-  font-size: 1.1em;
-  font-weight: 100;
+.Footsy .containerT .right ul span {
+  color: #6d6d6d;
+  font-size: 1.3em;
+  font-weight: 200;
   margin-bottom: 5px;
+  text-align: left;
+  margin-bottom: 10px;
 }
-.Footsy .container .right ul li {
-  font-size: 0.9em;
+.Footsy .containerT .right ul li {
+  font-size: 1em;
+  text-align: left;
+  color: #6d6d6d;
+}
+.Footsy .containerB {
+  background: #ffffff;
+  padding-top: 2em;
+  padding-bottom: 18em;
+  color: #6d6d6d;
 }
 
 @font-face {

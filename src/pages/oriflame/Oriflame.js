@@ -11,7 +11,7 @@ import News from "../../components_oriflame/ArticleThumbnail";
 import Footer from "../../components_oriflame/Footer";
 
 import { useState, useEffect } from "react";
-
+///
 
 export default function () {
   const [scrolled, setScrolled] = useState(false);

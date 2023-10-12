@@ -21,7 +21,7 @@ function NavBar() {
       <div className="container">
         <div className="rightboy">
           <div className="logo">
-            <Link to="/oriflame" onClick={() => onUpdateActiveLink("oriflame")}>
+            <Link to="/" onClick={() => onUpdateActiveLink("home")}>
               <img src={Logo} className="logoimage" alt="logo image" />
             </Link>
           </div>
@@ -33,7 +33,6 @@ function NavBar() {
           >
             <svg
               width="49"
-              //className="mens"
               height="16"
               viewBox="0 0 49 16"
               fill="none"
@@ -82,11 +81,6 @@ function NavBar() {
             <li>
               <Link
                 to="/"
-                className={
-                  activeLink === "home"
-                    ? "active navbar-link"
-                    : "inactive navbar-link"
-                }
                 onClick={() => {
                   if (window.screenX < 531) {
                     onUpdateActiveLink("home");
@@ -96,17 +90,20 @@ function NavBar() {
                   }
                 }}
               >
-                <span>Home</span>
+                <span
+                  className={
+                    activeLink === "home"
+                      ? "active navbar-link"
+                      : "inactive navbar-link"
+                  }
+                >
+                  Home
+                </span>
               </Link>
             </li>
             <li>
               <Link
                 to="/browse"
-                className={
-                  activeLink === "browse"
-                    ? "active navbar-link"
-                    : "inactive navbar-link"
-                }
                 onClick={() => {
                   if (window.screenX < 531) {
                     onUpdateActiveLink("browse");
@@ -116,17 +113,20 @@ function NavBar() {
                   }
                 }}
               >
-                <span>Browse</span>
+                <span
+                  className={
+                    activeLink === "browse"
+                      ? "active navbar-link"
+                      : "inactive navbar-link"
+                  }
+                >
+                  Browse
+                </span>
               </Link>
             </li>
             <li>
               <Link
                 to="/PreOrder"
-                className={
-                  activeLink === "PreOrder"
-                    ? "active navbar-link"
-                    : "inactive navbar-link"
-                }
                 onClick={() => {
                   if (window.screenX < 531) {
                     onUpdateActiveLink("PreOrder");
@@ -136,17 +136,20 @@ function NavBar() {
                   }
                 }}
               >
-                <span>Pre-Order</span>
+                <span
+                  className={
+                    activeLink === "PreOrder"
+                      ? "active navbar-link"
+                      : "inactive navbar-link"
+                  }
+                >
+                  Pre-Order
+                </span>
               </Link>
             </li>{" "}
             <li>
               <Link
                 to="/rando"
-                className={
-                  activeLink === "rando"
-                    ? "active navbar-link"
-                    : "inactive navbar-link"
-                }
                 onClick={() => {
                   if (window.screenX < 531) {
                     onUpdateActiveLink("rando");
@@ -156,7 +159,15 @@ function NavBar() {
                   }
                 }}
               >
-                <span>rando</span>
+                <span
+                  className={
+                    activeLink === "rando"
+                      ? "active navbar-link"
+                      : "inactive navbar-link"
+                  }
+                >
+                  rando
+                </span>
               </Link>
             </li>
           </ul>

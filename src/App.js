@@ -12,12 +12,7 @@ import PreOrder from "./pages/PreOrder";
 import DefaultLayout from "./components/Layout";
 import Signup from "./pages/SignUp";
 import Browse from "./pages/Browse";
-import Random from "./pages/weirdnewpage";
-
-
-import Oriflame from "./pages/oriflame/Oriflame";
-import Filler from "./pages/oriflame/filler";
-import Filler2 from "./pages/oriflame/filler2";
+import Random from "./pages/weirdnewpage"; 
 
 function App() {
   const location = useLocation()
@@ -30,11 +25,7 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/PreOrder" element={<PreOrder />}></Route>
         <Route path="/browse" element={<Browse />}></Route>
-        <Route path="/rando" element={<Random />}></Route>
-
-        <Route path="/oriflame" element={<Oriflame />}></Route>
-        <Route path="/filler" element={<Filler />}></Route>
-        <Route path="/filler2" element={<Filler2 />}></Route>
+        <Route path="/rando" element={<Random />}></Route> 
       </Routes>
       </AnimatePresence>
     </DefaultLayout>

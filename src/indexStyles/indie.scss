@@ -1,8 +1,7 @@
 @import "./box";
 @import "./Price";
 @import "./footer";
-@import "./pagestyles/weirdnewpage";
-@import "./oriflame/oriflae";
+@import "./pagestyles/weirdnewpage"; 
 
 @font-face {
   font-family: Centra;
@@ -99,6 +98,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .NavBar {
@@ -134,7 +134,7 @@ a {
     }
 
     .closedNav {
-      cursor: pointer;
+      cursor: default;
       color: rgb(37, 37, 37);
       display: flex;
       gap: 8em;
@@ -186,6 +186,7 @@ button {
 }
 
 .navbar-link {
+  cursor: pointer;
   opacity: 0.6;
   transition: 0.1s ease-in-out;
 

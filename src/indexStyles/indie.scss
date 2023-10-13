@@ -200,9 +200,10 @@ button {
 }
 
 .active {
+  color: red;
   opacity: 1;
-  padding: 1.4px 2px;
-  //border-bottom: solid 3px rgb(37, 37, 37);
+  padding: 1.4px 2px; 
+  text-shadow: 1px 1px 3px rgb(189, 189, 189);
 }
 
 .SignUp {

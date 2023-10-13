@@ -1,27 +1,31 @@
 import { Link, useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Logo from "../Resources/Logogogogo.png";
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
   const [menuha, setMenuha] = useState(false);
 
-  const onUpdateActiveLink = (value) => {
-    setActiveLink(value);
+  const UpdateActiveLink = (value) => {
+    setActiveLink(value);  
   };
 
   const navy = useNavigate();
   const sign = () => {
     navy("/Signup");
-    onUpdateActiveLink("Signup");
+    UpdateActiveLink("Signup");
   };
+  const weird = () =>{
+    navy("/preview");
+  }
+
 
   return (
     <div className="NavBar">
       <div className="container">
         <div className="rightboy">
           <div className="logo">
-            <Link to="/" onClick={() => onUpdateActiveLink("home")}>
+            <Link to="/" onClick={() => UpdateActiveLink("home")}>
               <img src={Logo} className="logoimage" alt="logo image" />
             </Link>
           </div>
@@ -83,9 +87,9 @@ function NavBar() {
                 to="/"
                 onClick={() => {
                   if (window.screenX < 531) {
-                    onUpdateActiveLink("home");
+                    UpdateActiveLink("home");
                   } else {
-                    onUpdateActiveLink("home");
+                    UpdateActiveLink("home");
                     setMenuha(!menuha);
                   }
                 }}
@@ -106,9 +110,9 @@ function NavBar() {
                 to="/browse"
                 onClick={() => {
                   if (window.screenX < 531) {
-                    onUpdateActiveLink("browse");
+                    UpdateActiveLink("browse");
                   } else {
-                    onUpdateActiveLink("browse");
+                    UpdateActiveLink("browse");
                     setMenuha(!menuha);
                   }
                 }}
@@ -118,7 +122,7 @@ function NavBar() {
                     activeLink === "browse"
                       ? "active navbar-link"
                       : "inactive navbar-link"
-                  }
+                  } 
                 >
                   Browse
                 </span>
@@ -129,9 +133,9 @@ function NavBar() {
                 to="/PreOrder"
                 onClick={() => {
                   if (window.screenX < 531) {
-                    onUpdateActiveLink("PreOrder");
+                    UpdateActiveLink("PreOrder");
                   } else {
-                    onUpdateActiveLink("PreOrder");
+                    UpdateActiveLink("PreOrder");
                     setMenuha(!menuha);
                   }
                 }}
@@ -152,9 +156,9 @@ function NavBar() {
                 to="/rando"
                 onClick={() => {
                   if (window.screenX < 531) {
-                    onUpdateActiveLink("rando");
+                    UpdateActiveLink("rando");
                   } else {
-                    onUpdateActiveLink("rando");
+                    UpdateActiveLink("rando");
                     setMenuha(!menuha);
                   }
                 }}
@@ -174,7 +178,7 @@ function NavBar() {
         </div>
         <div className="getstarted">
           <div className="seperator"></div>
-          <button className="getStarted" onClick={sign}>
+          <button className="getStarted" onClick={weird}>
             About
           </button>
           <div className="seperator"></div>

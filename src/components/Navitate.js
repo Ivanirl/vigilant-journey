@@ -2,8 +2,6 @@ import { useState } from "react";
 
 export default function vitate(){
 
-
-    
     return(
         <div className="vitate">
             <ul>

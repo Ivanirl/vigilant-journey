@@ -6,7 +6,7 @@ export default function Preview() {
   return (
     <div>
       <div className="Preview">
-        I'm outside babyyyy
+        I'm outside babyy 
       </div>
     </div>
   );
